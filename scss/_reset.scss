@@ -1,0 +1,24 @@
+*{ margin:0; padding:0; box-sizing: border-box;}
+ul,ol,li{ list-style:none; }
+a{ text-decoration:none; }
+fieldset {
+    border:none; 
+}
+.wrap::after {
+    content:""; 
+	display:block; 
+	clear:both;
+}
+
+.h{
+    position:absolute; 
+    top:-9999px; 
+    opacity:0; 
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Open+Sans&family=Overpass&display=swap');
+
+// font-family: 'Noto Sans KR', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Overpass', sans-serif;

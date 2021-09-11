@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Open+Sans&family=Overpass&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul, ol, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+fieldset {
+  border: none; }
+
+.wrap::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.h {
+  position: absolute;
+  top: -9999px;
+  opacity: 0; }
+
+#header {
+  width: 100%; }
+  #header .inner {
+    width: 1180px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative; }
+    #header .inner h1 {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%); }
+      #header .inner h1 a {
+        font: bold 24px/1  'Open Sans', sans-serif;
+        color: #1F2120; }
+    #header .inner .menuWeb #gnb {
+      position: absolute;
+      top: 50%;
+      right: 20%;
+      transform: translateY(-50%); }
+      #header .inner .menuWeb #gnb li {
+        display: inline-block;
+        margin-left: 40px;
+        display: inline-block; }
+        #header .inner .menuWeb #gnb li a {
+          font: 14px/1 'Overpass', sans-serif;
+          color: #1F2120; }
+    #header .inner .menuWeb .util {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%); }
+      #header .inner .menuWeb .util::after {
+        content: '';
+        display: block;
+        clear: both; }
+      #header .inner .menuWeb .util li {
+        float: left;
+        margin-right: 35px; }
+        #header .inner .menuWeb .util li:hover:nth-of-type(1) a {
+          color: red; }
+        #header .inner .menuWeb .util li:hover:nth-of-type(2) a {
+          background-color: black;
+          color: white; }
+        #header .inner .menuWeb .util li:hover:nth-of-type(3) a {
+          color: lightskyblue; }
+        #header .inner .menuWeb .util li a {
+          color: #1F2120; }
+
+#visual {
+  width: 90%;
+  height: calc(100vh - 100px);
+  background: #eee9e9;
+  display: flex;
+  margin: 0 auto; }
+  #visual section {
+    width: 100%;
+    height: 100%;
+    padding-top: 5vh;
+    display: flex;
+    position: relative;
+    z-index: 1; }
+    #visual section article {
+      flex: 1;
+      padding: 70px 40px 100px;
+      position: relative;
+      opacity: 0.6;
+      z-index: 1;
+      transition: opacity 1s, flex 1s;
+      cursor: -webkit-grab; }
+      #visual section article::before {
+        content: "";
+        display: block;
+        width: 80%;
+        height: 95%;
+        position: absolute;
+        background: #4f4b69;
+        top: 0px;
+        left: -200px;
+        opacity: 0;
+        transition: 1s; }
+      #visual section article .inner {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        position: relative; }
+        #visual section article .inner .txt {
+          width: 90%;
+          transition: 0.5s; }
+          #visual section article .inner .txt h2 {
+            font: bold 2vw/1 'Open Sans', sans-serif;
+            color: #fff;
+            margin-bottom: 40px;
+            padding-top: 70px;
+            transition: 1s; }
+            #visual section article .inner .txt h2::after {
+              content: "";
+              display: block;
+              width: 40px;
+              height: 3px;
+              background: #777;
+              margin-top: 10px;
+              transition: 1.5s; }
+          #visual section article .inner .txt img {
+            width: 90%;
+            height: 25vh; }
+          #visual section article .inner .txt h3 {
+            font: bold 25px/1 'Open Sans', sans-serif;
+            color: #504e4e;
+            margin-bottom: 30px;
+            padding-top: 30px;
+            transition: 1s; }
+          #visual section article .inner .txt p {
+            font: 14px/1.4 'Open Sans', sans-serif;
+            color: #999;
+            z-index: 3; }
+            #visual section article .inner .txt p::after {
+              content: "";
+              display: block;
+              transition: 1.5s;
+              position: absolute; }
+      #visual section article:hover {
+        flex: 1.5;
+        opacity: 1;
+        z-index: 2;
+        color: lightcoral; }
+        #visual section article:hover::before {
+          left: 0px;
+          opacity: 1; }
+        #visual section article:hover .inner .txt {
+          width: 75%; }
+          #visual section article:hover .inner .txt h2 {
+            font-size: 5vw;
+            padding-top: 0px; }
+            #visual section article:hover .inner .txt h2::after {
+              width: 100px;
+              background: lightblue; }
+          #visual section article:hover .inner .txt h3 {
+            color: lightsalmon; }
+
+#footer {
+  width: 100%;
+  padding: 60px 0px 30px 0px;
+  border-top: 1px solid #e1e1e1; }
+  #footer .inner {
+    width: 1180px;
+    margin: 0 auto;
+    text-align: center; }
+    #footer .inner h1 {
+      font: 20px/1 'Overpass', sans-serif;
+      color: #222222;
+      margin-bottom: 20px; }
+    #footer .inner .wrap {
+      width: 100%; }
+      #footer .inner .wrap .top {
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #e1e1e1;
+        margin-bottom: 20px;
+        padding: 40px 15px; }
+        #footer .inner .wrap .top h2 {
+          font: bold 14px/1 'Overpass', sans-serif;
+          color: #999999;
+          margin-bottom: 20px; }
+        #footer .inner .wrap .top p {
+          font: 12px/1.5 'Overpass', sans-serif;
+          color: #999999;
+          letter-spacing: 1px; }
+        #footer .inner .wrap .top .first {
+          width: 33.333%;
+          border-right: 1px solid #e1e1e1; }
+          #footer .inner .wrap .top .first address {
+            font: 12px/1.5 'Noto Sans KR';
+            color: #999999;
+            margin-right: 10px; }
+        #footer .inner .wrap .top .middle {
+          width: 33.333%;
+          border-right: 1px solid #e1e1e1; }
+        #footer .inner .wrap .top .last {
+          width: 33.333%; }
+          #footer .inner .wrap .top .last h2 {
+            font: bold 30px/1 'Overpass'; }
+          #footer .inner .wrap .top .last .box {
+            min-height: 150px;
+            margin: 0 auto; }
+            #footer .inner .wrap .top .last .box span {
+              width: 250px;
+              padding: 3px 10px;
+              margin-bottom: 5px;
+              display: inline-block;
+              border-bottom: 1px solid #999; }
+              #footer .inner .wrap .top .last .box span a {
+                display: block;
+                font: bold 15px/1 'arial';
+                color: #555; }
+                #footer .inner .wrap .top .last .box span a::after {
+                  float: right;
+                  content: '>'; }
+            #footer .inner .wrap .top .last .box ul {
+              display: none;
+              position: absolute;
+              top: 36px;
+              width: 100%; }
+              #footer .inner .wrap .top .last .box ul:hover {
+                display: block; }
+      #footer .inner .wrap .bottom {
+        text-align: center;
+        font: 13px/1 'Overpass';
+        color: #646464; }
+
+/*# sourceMappingURL=style.css.map */
