@@ -170,9 +170,8 @@ fieldset {
   padding: 60px 0px 30px 0px;
   border-top: 1px solid #e1e1e1; }
   #footer .inner {
-    width: 1180px;
-    margin: 0 auto;
-    text-align: center; }
+    width: 100%;
+    margin: 0 auto; }
     #footer .inner h1 {
       font: 20px/1 'Overpass', sans-serif;
       color: #222222;
@@ -182,9 +181,8 @@ fieldset {
       #footer .inner .wrap .top {
         display: flex;
         flex-wrap: wrap;
-        border-bottom: 1px solid #e1e1e1;
         margin-bottom: 20px;
-        padding: 40px 15px; }
+        padding: 0px 40px 5px; }
         #footer .inner .wrap .top h2 {
           font: bold 14px/1 'Overpass', sans-serif;
           color: #999999;
@@ -193,23 +191,49 @@ fieldset {
           font: 12px/1.5 'Overpass', sans-serif;
           color: #999999;
           letter-spacing: 1px; }
+        #footer .inner .wrap .top .text1 {
+          font: 14px/1.6 'Overpass', 'Noto Sans KR';
+          color: #434343e6;
+          letter-spacing: 1px;
+          margin-bottom: 30px; }
+        #footer .inner .wrap .top .text2 {
+          font: 13px/1.6 'Noto Sans KR';
+          color: #434343e6; }
+          #footer .inner .wrap .top .text2 span:nth-of-type(1) {
+            display: block; }
         #footer .inner .wrap .top .first {
           width: 33.333%;
-          border-right: 1px solid #e1e1e1; }
-          #footer .inner .wrap .top .first address {
-            font: 12px/1.5 'Noto Sans KR';
-            color: #999999;
-            margin-right: 10px; }
+          border-right: 1px solid #e1e1e1;
+          padding-right: 10px; }
+          #footer .inner .wrap .top .first ul {
+            margin-bottom: 60px; }
+            #footer .inner .wrap .top .first ul li {
+              display: inline-block;
+              border-right: 1px solid #e1e1e1; }
+              #footer .inner .wrap .top .first ul li:last-child {
+                border-right: 0px; }
+              #footer .inner .wrap .top .first ul li a {
+                font: 12px/1 'Noto Sans KR';
+                color: #444;
+                margin-right: 10px; }
         #footer .inner .wrap .top .middle {
           width: 33.333%;
-          border-right: 1px solid #e1e1e1; }
+          border-right: 1px solid #e1e1e1;
+          padding: 10px 0; }
+          #footer .inner .wrap .top .middle h1 {
+            text-align: center;
+            font: bold 30px/1 'Open Sans';
+            color: #434343; }
         #footer .inner .wrap .top .last {
-          width: 33.333%; }
+          width: 33.333%;
+          padding-left: 20px; }
           #footer .inner .wrap .top .last h2 {
-            font: bold 30px/1 'Overpass'; }
+            font: bold 30px/1 'Overpass';
+            color: #434343;
+            margin-bottom: 60px; }
           #footer .inner .wrap .top .last .box {
-            min-height: 150px;
-            margin: 0 auto; }
+            min-height: 100px;
+            margin-top: 30px; }
             #footer .inner .wrap .top .last .box span {
               width: 250px;
               padding: 3px 10px;
