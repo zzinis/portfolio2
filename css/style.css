@@ -119,7 +119,8 @@ fieldset {
         width: 69%;
         height: 65vh;
         padding-top: 40px;
-        border-bottom: 1px solid #bbb; }
+        border-bottom: 1px solid #bbb;
+        position: relative; }
         #visual .inner .wrap .right h2 {
           font: bold 18px/1 'arial';
           color: #333;
@@ -139,11 +140,22 @@ fieldset {
         #visual .inner .wrap .right .pic {
           width: 100%;
           height: 200px;
-          margin-top: 20px; }
+          margin-top: 20px;
+          position: relative; }
           #visual .inner .wrap .right .pic img {
             width: 100%;
             height: 100%;
             object-fit: cover; }
+          #visual .inner .wrap .right .pic .prev {
+            position: absolute;
+            top: 50%;
+            left: 40px;
+            transform: translateX(-50%); }
+          #visual .inner .wrap .right .pic .next {
+            position: absolute;
+            top: 50%;
+            right: 30px;
+            transform: translateX(-50%); }
     #visual .inner .bottom {
       width: 100%;
       height: 10vh;
@@ -258,6 +270,41 @@ fieldset {
             transform: scale(1.1); }
           #brand .inner .wrap .txt > a:hover::after {
             transform: translate(10px, 0); }
+
+#introduce {
+  width: 100%;
+  padding: 150px 0; }
+  #introduce .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #introduce .inner .wrap {
+      display: flex; }
+      #introduce .inner .wrap article {
+        width: 380px;
+        margin-right: 20px;
+        display: flex; }
+        #introduce .inner .wrap article:last-child {
+          margin-right: 0px; }
+        #introduce .inner .wrap article .icon {
+          font-size: 40px;
+          color: #c4c4c4;
+          margin-right: 15px; }
+        #introduce .inner .wrap article .txt h2 {
+          font: bold 13px/1 'Open Sans', sans-serif;
+          color: #212121;
+          margin-bottom: 20px;
+          letter-spacing: 2px; }
+          #introduce .inner .wrap article .txt h2::after {
+            content: '';
+            width: 35px;
+            height: 3px;
+            display: block;
+            background: orange;
+            margin-top: 20px; }
+        #introduce .inner .wrap article .txt p {
+          font: 14px/1.7 'Open Sans', sans-serif;
+          color: #828282;
+          margin-right: 30px; }
 
 /* box1*/
 #box1 {
