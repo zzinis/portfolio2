@@ -351,6 +351,82 @@ fieldset {
           height: 500px;
           object-fit: cover; }
 
+/* read */
+#read {
+  width: 100%;
+  padding: 150px 0; }
+  #read .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #read .inner h1 {
+      font: bold 24px/1 'Overpass', sans-serif;
+      color: #050505;
+      margin-bottom: 80px; }
+      #read .inner h1::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #444;
+        margin-top: 10px; }
+    #read .inner a {
+      display: block;
+      width: 140px;
+      height: 40px;
+      font: 15px/40px 'Overpass', sans-serif;
+      color: #fff;
+      background-color: black;
+      border: 2px solid black;
+      text-align: center;
+      margin: 0 auto;
+      transition: 0.5s; }
+      #read .inner a:hover {
+        color: black;
+        background-color: #fff;
+        border: 3px solid black; }
+    #read .inner .wrap {
+      width: 100%;
+      margin-bottom: 40px; }
+      #read .inner .wrap article {
+        float: left;
+        position: relative;
+        object-fit: cover;
+        margin-bottom: 60px;
+        width: 380px;
+        margin-right: 20px; }
+        #read .inner .wrap article:nth-of-type(3) {
+          margin-right: 0; }
+        #read .inner .wrap article .pic {
+          overflow: hidden; }
+          #read .inner .wrap article .pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin-bottom: 50px;
+            transition: 0.5s; }
+            #read .inner .wrap article .pic img:hover {
+              transform: scale(1.05); }
+        #read .inner .wrap article h2 {
+          font: 600 15px/1 'Open Sans';
+          color: #000000;
+          margin-bottom: 20px;
+          letter-spacing: 2px; }
+        #read .inner .wrap article h3 {
+          font: 14px/1 'Open Sans', sans-serif;
+          color: #828282;
+          margin-bottom: 30px; }
+        #read .inner .wrap article > p {
+          font: 16px/1.2 'Overpass', sans-serif;
+          color: #626262;
+          margin-right: 20px; }
+          #read .inner .wrap article > p::after {
+            content: '';
+            width: 35px;
+            height: 2px;
+            background-color: #111;
+            display: block;
+            margin-top: 30px; }
+
 /* commnet */
 #comment {
   width: 100%;
