@@ -16,7 +16,7 @@
             top: 50%;
             transform: translateY(-50%);
             a{
-                font: bold 24px/1  'Open Sans', sans-serif;
+                font:  24px/1  'Open Sans', sans-serif;
                 color: #1F2120;
             }
         }
@@ -26,20 +26,56 @@
             #gnb{
                 position: absolute;
                 top: 50%;
-                right: 20%;
+                right: 26%;
                 transform: translateY(-50%);
             
 
                 li{
                     display: inline-block;
-                    margin-left: 40px;
+                    margin-left: 35px;
                     display: inline-block;
                     
 
                     a{
-                        font: 14px/1 'Overpass', sans-serif;
+                        font: bold 14px/1 'Overpass', sans-serif;
                         color: #1F2120;
                         
+                    }
+
+                }
+            }
+            .form-text{
+                position: absolute;
+                top: 50%;
+                right: 12%;
+                transform: translateY(-50%);
+                background-color: #fff;
+                
+                p{
+                    border-bottom: 1px solid #111;
+                    width: 130px;
+                    display: inline-block;
+
+                    >#searchText {
+                    width: 80%;
+                    height: 100%;
+                    padding: 5px 20px;
+                    border: none;
+                    font: 15px/1 'arial';
+                    columns: #222;
+                    vertical-align: middle;
+                    background: transparent;
+                    margin-right: 5px;
+                    
+                    }
+                
+                    >.searchBtn {
+                    width: 5%;
+                    height: 20px;
+                    font: bold 15px/20px 'arial';
+                    border: none;
+                    background-color: #fff;
+                    cursor: pointer;
                     }
 
                 }
@@ -48,7 +84,7 @@
             .util{
                 position: absolute;
                 top: 50%;
-                right: 0;
+                right: -3%;
                 transform: translateY(-50%);
                 &::after{
                     content: '';
@@ -65,8 +101,7 @@
                             color: red;
                         }
                         &:nth-of-type(2) a{
-                            background-color: black;
-                            color: white;
+                            font-size: 17px
 
                         }
                         &:nth-of-type(3) a{
@@ -76,7 +111,7 @@
 
                     a{
                         color: #1F2120;
-
+                        font-size: 16px;
                         
                     }
 

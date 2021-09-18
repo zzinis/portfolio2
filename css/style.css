@@ -38,24 +38,51 @@ fieldset {
       top: 50%;
       transform: translateY(-50%); }
       #header_sub .inner h1 a {
-        font: bold 24px/1  'Open Sans', sans-serif;
+        font: 24px/1  'Open Sans', sans-serif;
         color: #1F2120; }
     #header_sub .inner .menuWeb #gnb {
       position: absolute;
       top: 50%;
-      right: 20%;
+      right: 26%;
       transform: translateY(-50%); }
       #header_sub .inner .menuWeb #gnb li {
         display: inline-block;
-        margin-left: 40px;
+        margin-left: 35px;
         display: inline-block; }
         #header_sub .inner .menuWeb #gnb li a {
-          font: 14px/1 'Overpass', sans-serif;
+          font: bold 14px/1 'Overpass', sans-serif;
           color: #1F2120; }
+    #header_sub .inner .menuWeb .form-text {
+      position: absolute;
+      top: 50%;
+      right: 12%;
+      transform: translateY(-50%);
+      background-color: #fff; }
+      #header_sub .inner .menuWeb .form-text p {
+        border-bottom: 1px solid #111;
+        width: 130px;
+        display: inline-block; }
+        #header_sub .inner .menuWeb .form-text p > #searchText {
+          width: 80%;
+          height: 100%;
+          padding: 5px 20px;
+          border: none;
+          font: 15px/1 'arial';
+          columns: #222;
+          vertical-align: middle;
+          background: transparent;
+          margin-right: 5px; }
+        #header_sub .inner .menuWeb .form-text p > .searchBtn {
+          width: 5%;
+          height: 20px;
+          font: bold 15px/20px 'arial';
+          border: none;
+          background-color: #fff;
+          cursor: pointer; }
     #header_sub .inner .menuWeb .util {
       position: absolute;
       top: 50%;
-      right: 0;
+      right: -3%;
       transform: translateY(-50%); }
       #header_sub .inner .menuWeb .util::after {
         content: '';
@@ -67,12 +94,12 @@ fieldset {
         #header_sub .inner .menuWeb .util li:hover:nth-of-type(1) a {
           color: red; }
         #header_sub .inner .menuWeb .util li:hover:nth-of-type(2) a {
-          background-color: black;
-          color: white; }
+          font-size: 17px; }
         #header_sub .inner .menuWeb .util li:hover:nth-of-type(3) a {
           color: lightskyblue; }
         #header_sub .inner .menuWeb .util li a {
-          color: #1F2120; }
+          color: #1F2120;
+          font-size: 16px; }
 
 /*content*/
 .content {
@@ -158,6 +185,109 @@ fieldset {
         text-align: center;
         font: 13px/1 'Overpass';
         color: #646464; }
+
+.department .sub_visual {
+  background: url(../img/bg1.jpg) no-repeat center/cover;
+  opacity: 0.7; }
+.department .inner {
+  width: 1180px;
+  margin: 0 auto;
+  position: relative; }
+  .department .inner .top {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 30px; }
+    .department .inner .top .wrap {
+      display: flex;
+      position: relative;
+      width: 100%;
+      height: 100%; }
+      .department .inner .top .wrap .pic {
+        width: 45%;
+        height: 350px;
+        margin-right: 4%; }
+        .department .inner .top .wrap .pic img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .department .inner .top .wrap .txt {
+        width: 50%;
+        padding: 0px 20px; }
+        .department .inner .top .wrap .txt h2 {
+          font: bold 20px/1.3 'Oxygen', sans-serif;
+          color: #222;
+          margin-bottom: 30px;
+          border-bottom: 1px solid #bbb; }
+          .department .inner .top .wrap .txt h2::after {
+            content: '';
+            display: block;
+            width: 170px;
+            height: 3px;
+            background-color: #5faaff;
+            margin-bottom: -2px; }
+        .department .inner .top .wrap .txt article {
+          margin-bottom: 30px; }
+          .department .inner .top .wrap .txt article p {
+            font: 15px/1.6 'Overpass', sans-serif;
+            color: #222; }
+          .department .inner .top .wrap .txt article span {
+            font: 18px/1.5 'Overpass', sans-serif;
+            color: #222; }
+  .department .inner .bottom {
+    width: 100%; }
+    .department .inner .bottom h1 {
+      font: bold 23px/1 'Overpass', sans-serif;
+      color: #222;
+      margin-bottom: 50px;
+      text-align: left;
+      border-bottom: 1px solid #bbb; }
+      .department .inner .bottom h1::after {
+        content: '';
+        display: block;
+        width: 160px;
+        height: 3px;
+        background-color: #5faaff;
+        margin-bottom: -2px; }
+    .department .inner .bottom .wrap {
+      display: flex;
+      flex-wrap: wrap; }
+      .department .inner .bottom .wrap article {
+        width: 280px;
+        height: 450px;
+        margin-right: 20px;
+        margin-bottom: 50px;
+        transition: 0.5s; }
+        .department .inner .bottom .wrap article:nth-of-type(4), .department .inner .bottom .wrap article:nth-of-type(8) {
+          margin-right: 0; }
+        .department .inner .bottom .wrap article h2 {
+          font: bold 20px/1 'Overpass', sans-serif;
+          color: #222;
+          margin-bottom: 15px;
+          margin-top: 20px; }
+        .department .inner .bottom .wrap article .pic {
+          width: 100%;
+          height: 300px;
+          margin-bottom: 30px;
+          transition: 0.5s; }
+          .department .inner .bottom .wrap article .pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+        .department .inner .bottom .wrap article h2 {
+          font: bold 20px/1 'Overpass', sans-serif;
+          color: #222;
+          margin-bottom: 5px; }
+        .department .inner .bottom .wrap article h3 {
+          font: 17px/1 'Overpass', sans-serif;
+          color: #777;
+          margin-bottom: 15px; }
+        .department .inner .bottom .wrap article p {
+          border-top: 1px solid #bbb;
+          padding: 15px 0;
+          font: 15px/1.5 'Overpass', sans-serif;
+          color: #555; }
 
 #header {
   width: 100%; }
