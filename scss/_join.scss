@@ -1,0 +1,197 @@
+@charset "utf-8";
+.join{
+
+    padding:0 0 150px; 
+    .sub_visual{
+        background:url(../img/c4.jpg) no-repeat center/cover; 
+    }
+
+    .inner{
+
+        .joinbox{
+            background-color: #f5f7f7;
+            margin-bottom: 30px;
+            .inner{
+                padding: 10px 40px;
+                
+                ul{
+                    // display: flex;
+                    // align-content: center;
+                    // justify-content: center;
+                    text-align: center;
+                    li{
+                        display: inline-block;
+                        width: 285px;
+                        height: 47px;
+                        
+                        
+                        i{
+                            font-size: 25px;
+                            margin-right: 5px;
+
+                        }
+
+                        .txtbox{
+                            display: inline-block;
+                            text-align: left;
+                            color: #8f8f8f;
+                            padding-top: 5px;
+                            p{
+                                font: 13px/1 'arial';
+                                
+                            }
+                            span{
+                                font: 15px/1 'arial';
+                                
+                            }
+                            
+                            
+                        }
+                    }
+                }
+
+            }
+        }
+        h2{
+            font:bold 18px/1 'arial'; 
+            color:#555; 
+            margin-bottom:20px; 
+        }
+        .hidden{
+            position: absolute;
+            top: -9999px;
+            opacity: 0;
+        }
+
+        #terms{
+            width:100%; 
+            height:200px; 
+            resize:none; 
+            padding:20px; 
+            box-sizing:border-box; 
+            background-color:#eee; 
+            color:#888; 
+            margin-bottom:10px; 
+        }
+        .agreement{
+            margin-bottom:70px; 
+            text-align: right;
+
+            label[for="agree"]{
+                font-size:12px; 
+            }
+        }
+
+        table{
+            width:100%; 
+            border-top:2px solid #111; 
+            border-collapse:collapse; 
+
+            th{
+                width:18%; 
+                text-align:left; 
+                font:bold 14px/1 'arial'; 
+                color:#666; 
+                border-right: 1px solid #e6e6e6;
+                border-bottom:1px solid #888; 
+                padding:20px; 
+
+                &:last-child{ 
+                    border-right:none; 
+                    border-bottom:none; 
+                    text-align:center; 
+                    background:#fff; 
+                    font-size:0;
+                }
+            }
+            td{
+                border-bottom:1px solid #888; 
+                padding:20px 30px; 
+            }
+
+            input[type=submit]{
+                width:150px; 
+                height:40px; 
+                border: 3px solid #111;
+                background-color:#111; 
+                font: 14px/40px 'arial'; 
+                color:#fff; 
+                
+            }
+
+            input[type=reset]{
+                width:150px; 
+                height:40px; 
+                border: 3px solid #000;
+                background-color:#fff; 
+                font:14px/40px 'arial'; 
+                color:#111; 
+                margin:0 20px; 
+            }
+            input[type=text], input[type=password]{
+                height:40px; 
+                border:1px solid #bbb; 
+                padding-left:20px; 
+            }
+            input[type=checkbox]{
+                margin-right:10px; 
+            }
+            label{
+                margin-right:30px; 
+            }
+            select{
+                width:20%; 
+                height:40px; 
+                border:1px solid #bbb; 
+
+                padding-left:20px; 
+            }
+            .add{
+                display: inline-block;
+                margin-bottom: 10px;
+            }
+
+            .add1{
+                display: block;
+                margin-bottom: 10px;
+                width: 440px;
+            }
+            .add2{
+                display: block;
+                width: 440px;
+            }
+            
+        
+
+            .userid1{
+                font: 12px/1 'arial';
+                color: #999;
+                display: inline-block;
+                margin-left: 10px;
+            }
+            .password1{
+                font: 12px/1 'arial';
+                color: red;
+                display: inline-block;
+                margin-left: 10px;
+                letter-spacing: -1px;
+
+            }
+
+            
+            
+            .btn{
+                display: inline-block;
+                width: 100px;
+                height: 40px;
+                font: 13px/40px 'arial';
+                color: #fff;
+                background-color: #444444;
+                text-align: center;
+
+            }
+        }
+    }
+}
+
+
