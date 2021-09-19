@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+
+.community .sub_visual {
+    background: url(../img/b5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+}
+
+
+.search{
+    width: 100%;
+    height: 42px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    text-align: right;
+    
+    p{
+        border-bottom: 1px solid #bbb;
+        width: 300px;
+        display: inline-block;
+
+        #searchtext {
+        width: 65%;
+        height: 100%;
+        padding: 5px 20px;
+        border: none;
+        font: 15px/1 'arial';
+        columns: #222;
+        vertical-align: middle;
+        background: transparent;
+        margin-right: 5px;
+        
+        }
+    
+        .searchbtn {
+        
+        width: 10%;
+        height: 30px;
+        padding: 6px 20px;
+        font: bold 15px/20px 'arial';
+        border: none;
+        background-color: #fff;
+        margin: 0 10px;
+        cursor: pointer;
+        }
+
+    }
+
+    
+}
+
+.community .inner {
+    
+    table {
+        width: 100%;
+        border-top: 2px solid #111;
+        margin-bottom: 50px;
+        border-collapse: collapse;
+
+        th {
+        &:nth-of-type(1) {
+            width: 10%;
+        }
+
+        &:nth-of-type(2) {
+            width: 60%;
+        }
+
+        &:nth-of-type(3), &:nth-of-type(4) {
+            width: 15%;
+        }
+        }
+
+        td {
+        padding: 17px;
+        border-bottom: 1px solid #bbb;
+        text-align: center;
+
+        a {
+            font: 16px/1 'arial';
+            color: #333;
+        }
+
+        &:nth-of-type(2) {
+            text-align: left;
+        }
+        }
+
+        tr:hover td {
+        background: #eeeded;
+        }
+    }
+
+    .pagination {
+        width: 100%;
+        text-align: center;
+        position: relative;
+
+        &::after {
+        content: '';
+        display: block;
+        clear: both;
+        }
+
+        .prev, .next {
+        display: inline-block;
+        font: 20px/30px 'arial';
+        color: #666;
+        text-align: center;
+        vertical-align: middle;
+        }
+
+        .numbers {
+        display: inline-block;
+        text-align: center;
+        font-size: 0;
+
+        a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            font: 11px/30px 'arial';
+            color: #666;
+            text-align: center;
+            border: none;
+            margin: 0 5px;
+            transition: 0.5s;
+
+            &:hover {
+            border-bottom: 1px solid #bbb;
+            font: bold 13px/30px 'arial';
+            }
+        }
+        }
+    }
+}
