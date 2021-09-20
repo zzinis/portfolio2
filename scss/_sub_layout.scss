@@ -258,3 +258,113 @@
         
     }
 }
+
+/*tablet*/
+
+@media screen and (max-width:1179px) {
+    #header_sub{
+        width: 100%;
+    
+        .inner{
+            width: 100%;
+    
+            >h1{
+                position: absolute;
+                left: 3%;
+                top: 50%;
+                transform: translateY(-50%);
+                >a{
+                    font:  bold 24px/1  'Open Sans', sans-serif;
+                    color: #1F2120;
+                }
+            }
+    
+            .menuWeb{
+                display: none;
+            }
+
+            .btnCall{                
+                display:block; 
+            }   
+        }
+    }    
+
+
+
+    #footer_sub{
+        .inner{
+            width: 100%;
+    
+            .wrap{
+                width: 100%;
+    
+                .top{
+    
+                    .first{
+                        width: 49%;
+                        border-right: none;
+                        margin-bottom: 30px;
+                        margin-right: 2%;
+                        padding: 0px 20px;
+    
+                    }
+    
+                    .middle{
+                        display: none;
+                        border-right: none;
+                    }
+    
+                    .last{
+    
+                        width: 49%;
+                        padding: 0px 20px;
+    
+                        ul{
+                            
+                            li{
+                                width: 25%;
+                        }
+                    }
+                }
+                
+            }
+            
+        }
+    }
+    
+    }
+}
+
+/*mobile*/
+
+@media screen and (max-width:593px) {
+
+    #footer{
+        .inner{
+            .wrap{
+                .top{
+                    .first{
+                        width: 100%;
+                        margin-bottom: 50px;
+                        margin-right: 0%;
+                        padding: 0px;
+                    }
+    
+                    .last{
+                        width: 100%;
+                        padding: 0px;
+    
+                        ul{
+                            li{
+                                width: 15%;
+                        }
+                    }
+                }
+                
+            }
+            
+        }
+    }
+    
+    }
+}

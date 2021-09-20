@@ -186,6 +186,55 @@ fieldset {
         font: 13px/1 'Overpass';
         color: #646464; }
 
+/*tablet*/
+@media screen and (max-width: 1179px) {
+  #header_sub {
+    width: 100%; }
+    #header_sub .inner {
+      width: 100%; }
+      #header_sub .inner > h1 {
+        position: absolute;
+        left: 3%;
+        top: 50%;
+        transform: translateY(-50%); }
+        #header_sub .inner > h1 > a {
+          font: bold 24px/1  'Open Sans', sans-serif;
+          color: #1F2120; }
+      #header_sub .inner .menuWeb {
+        display: none; }
+      #header_sub .inner .btnCall {
+        display: block; }
+
+  #footer_sub .inner {
+    width: 100%; }
+    #footer_sub .inner .wrap {
+      width: 100%; }
+      #footer_sub .inner .wrap .top .first {
+        width: 49%;
+        border-right: none;
+        margin-bottom: 30px;
+        margin-right: 2%;
+        padding: 0px 20px; }
+      #footer_sub .inner .wrap .top .middle {
+        display: none;
+        border-right: none; }
+      #footer_sub .inner .wrap .top .last {
+        width: 49%;
+        padding: 0px 20px; }
+        #footer_sub .inner .wrap .top .last ul li {
+          width: 25%; } }
+/*mobile*/
+@media screen and (max-width: 593px) {
+  #footer .inner .wrap .top .first {
+    width: 100%;
+    margin-bottom: 50px;
+    margin-right: 0%;
+    padding: 0px; }
+  #footer .inner .wrap .top .last {
+    width: 100%;
+    padding: 0px; }
+    #footer .inner .wrap .top .last ul li {
+      width: 15%; } }
 .community .sub_visual {
   background: url(../img/b5.jpg);
   background-size: cover;
@@ -1177,6 +1226,37 @@ fieldset {
       #header .inner .menuWeb {
         display: none; }
       #header .inner .btnCall {
-        display: block; } }
+        display: block; }
+
+  #footer .inner {
+    width: 100%; }
+    #footer .inner .wrap {
+      width: 100%; }
+      #footer .inner .wrap .top .first {
+        width: 49%;
+        border-right: none;
+        margin-bottom: 30px;
+        margin-right: 2%;
+        padding: 0px 20px; }
+      #footer .inner .wrap .top .middle {
+        display: none;
+        border-right: none; }
+      #footer .inner .wrap .top .last {
+        width: 49%;
+        padding: 0px 20px; }
+        #footer .inner .wrap .top .last ul li {
+          width: 25%; } }
+/*mobile*/
+@media screen and (max-width: 593px) {
+  #footer .inner .wrap .top .first {
+    width: 100%;
+    margin-bottom: 50px;
+    margin-right: 0%;
+    padding: 0px; }
+  #footer .inner .wrap .top .last {
+    width: 100%;
+    padding: 0px; }
+    #footer .inner .wrap .top .last ul li {
+      width: 15%; } }
 
 /*# sourceMappingURL=style.css.map */
