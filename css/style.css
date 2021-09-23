@@ -335,14 +335,13 @@ fieldset {
   .search p {
     border-bottom: 1px solid #bbb;
     width: 300px;
-    display: inline-block; }
+    display: inline-block;
+    font: 15px/1 'Noto Sans KR'; }
     .search p #searchtext {
       width: 65%;
       height: 100%;
       padding: 5px 20px;
       border: none;
-      font: 15px/1 'arial';
-      columns: #222;
       vertical-align: middle;
       background: transparent;
       margin-right: 5px; }
@@ -361,18 +360,13 @@ fieldset {
   border-top: 2px solid #111;
   margin-bottom: 50px;
   border-collapse: collapse; }
-  .community .inner table th:nth-of-type(1) {
-    width: 10%; }
-  .community .inner table th:nth-of-type(2) {
-    width: 60%; }
-  .community .inner table th:nth-of-type(3), .community .inner table th:nth-of-type(4) {
-    width: 15%; }
   .community .inner table td {
     padding: 17px;
     border-bottom: 1px solid #bbb;
-    text-align: center; }
+    text-align: center;
+    font: 15px/1 'Open Sans'; }
     .community .inner table td a {
-      font: 16px/1 'arial';
+      font: 16px/1 'Open Sans';
       color: #333; }
     .community .inner table td:nth-of-type(2) {
       text-align: left; }
@@ -388,7 +382,7 @@ fieldset {
     clear: both; }
   .community .inner .pagination .prev, .community .inner .pagination .next {
     display: inline-block;
-    font: 20px/30px 'arial';
+    font: 20px/30px 'Open Sans';
     color: #666;
     text-align: center;
     vertical-align: middle; }
@@ -400,16 +394,43 @@ fieldset {
       display: inline-block;
       width: 30px;
       height: 30px;
-      font: 11px/30px 'arial';
+      font: 11px/30px 'Open Sans';
       color: #666;
       text-align: center;
-      border: none;
       margin: 0 5px;
       transition: 0.5s; }
       .community .inner .pagination .numbers a:hover {
         border-bottom: 1px solid #bbb;
-        font: bold 13px/30px 'arial'; }
+        font: bold 13px/30px 'Open Sans'; }
 
+/* tablet -------------------------------------------------------------- */
+@media screen and (max-width: 1179px) {
+  .search p {
+    width: 220px; }
+    .search p #searchtext {
+      width: 70%;
+      padding: 5px 0px;
+      font: 14px/1 'arial';
+      margin-right: 0px; }
+    .search p .searchbtn {
+      padding: 6px 0px;
+      font: bold 14px/20px 'arial';
+      margin: 0px; }
+
+  .community .inner {
+    width: 100%;
+    padding: 0px 30px; }
+    .community .inner table td {
+      padding: 20px;
+      font: 15px/1 'Open Sans'; }
+      .community .inner table td a {
+        font: 15px/1 'Open Sans'; }
+      .community .inner table td:nth-of-type(2) {
+        text-align: left; }
+    .community .inner table td:nth-of-type(4) {
+      display: none; }
+    .community .inner .pagination .numbers a:nth-of-type(6), .community .inner .pagination .numbers a:nth-of-type(7), .community .inner .pagination .numbers a:nth-of-type(8), .community .inner .pagination .numbers a:nth-of-type(9), .community .inner .pagination .numbers a:nth-of-type(10) {
+      display: none; } }
 .join {
   padding: 0 0 150px; }
   .join .sub_visual {
