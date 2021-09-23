@@ -349,7 +349,7 @@ fieldset {
       width: 10%;
       height: 30px;
       padding: 6px 20px;
-      font: bold 15px/20px 'arial';
+      font: bold 15px/20px 'Open Sans';
       border: none;
       background-color: #fff;
       margin: 0 10px;
@@ -406,15 +406,15 @@ fieldset {
 /* tablet -------------------------------------------------------------- */
 @media screen and (max-width: 1179px) {
   .search p {
-    width: 220px; }
+    width: 220px;
+    font: 14px/1 'Noto Sans KR'; }
     .search p #searchtext {
       width: 70%;
       padding: 5px 0px;
-      font: 14px/1 'arial';
       margin-right: 0px; }
     .search p .searchbtn {
       padding: 6px 0px;
-      font: bold 14px/20px 'arial';
+      font: bold 14px/20px 'Open Sans';
       margin: 0px; }
 
   .community .inner {
@@ -431,6 +431,21 @@ fieldset {
       display: none; }
     .community .inner .pagination .numbers a:nth-of-type(6), .community .inner .pagination .numbers a:nth-of-type(7), .community .inner .pagination .numbers a:nth-of-type(8), .community .inner .pagination .numbers a:nth-of-type(9), .community .inner .pagination .numbers a:nth-of-type(10) {
       display: none; } }
+/* mobile -------------------------------------------------------------- */
+@media screen and (max-width: 539px) {
+  .search p {
+    width: 200px;
+    font: 13px/1 'Open Sans'; }
+    .search p #searchtext {
+      width: 80%; }
+
+  .community .inner {
+    padding: 0px 35px; }
+    .community .inner table td {
+      padding: 16px;
+      font: 14px/1 'Open Sans'; }
+      .community .inner table td a {
+        font: 14px/1.3 'Open Sans'; } }
 .join {
   padding: 0 0 150px; }
   .join .sub_visual {
