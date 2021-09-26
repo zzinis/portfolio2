@@ -1036,6 +1036,7 @@ fieldset {
           #brand .inner .wrap .txt > a:hover::after {
             transform: translate(10px, 0); }
 
+/* introduce */
 #introduce {
   width: 100%;
   padding: 150px 0; }
@@ -1411,6 +1412,33 @@ fieldset {
           right: -90px; }
         #brand .inner .wrap .txt > a::after {
           right: -60px; }
+
+  /* introduce */
+  #introduce {
+    padding: 150px 20px; }
+    #introduce .inner {
+      width: 100%; }
+      #introduce .inner .wrap {
+        flex-wrap: wrap;
+        text-align: center; }
+        #introduce .inner .wrap article {
+          width: 49%;
+          margin-right: 1%;
+          display: inline-block;
+          margin-bottom: 50px; }
+          #introduce .inner .wrap article .icon {
+            font-size: 40px;
+            margin-right: 0px;
+            margin-bottom: 15px; }
+          #introduce .inner .wrap article .txt h2 {
+            font: bold 14px/1 'Open Sans';
+            margin-bottom: 25px; }
+            #introduce .inner .wrap article .txt h2::after {
+              content: '';
+              width: 40px;
+              margin: 7px auto; }
+          #introduce .inner .wrap article .txt p {
+            margin-right: 10px; }
 
   /* read */
   #read {
