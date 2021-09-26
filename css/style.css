@@ -1412,6 +1412,70 @@ fieldset {
         #brand .inner .wrap .txt > a::after {
           right: -60px; }
 
+  /* read */
+  #read {
+    padding: 150px 40px; }
+    #read .inner {
+      width: 100%; }
+      #read .inner a {
+        display: block;
+        width: 140px;
+        height: 40px;
+        font: 15px/40px 'Overpass', sans-serif;
+        color: #fff;
+        background-color: black;
+        border: 2px solid black;
+        text-align: center;
+        margin: 0 auto;
+        transition: 0.5s; }
+        #read .inner a:hover {
+          color: black;
+          background-color: #fff;
+          border: 3px solid black; }
+      #read .inner .wrap {
+        width: 100%;
+        margin-bottom: 20px; }
+        #read .inner .wrap article {
+          float: left;
+          position: relative;
+          object-fit: cover;
+          margin-bottom: 30px;
+          width: 32%;
+          margin-right: 2%; }
+          #read .inner .wrap article:nth-of-type(3) {
+            margin-right: 0; }
+          #read .inner .wrap article .pic {
+            width: 100%;
+            height: 250px;
+            margin-bottom: 30px;
+            overflow: hidden; }
+            #read .inner .wrap article .pic img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              margin-bottom: 50px;
+              transition: 0.5s; }
+          #read .inner .wrap article h2 {
+            font: 600 15px/1 'Open Sans';
+            color: #000000;
+            margin-bottom: 20px;
+            letter-spacing: 2px; }
+          #read .inner .wrap article h3 {
+            font: 14px/1 'Open Sans', sans-serif;
+            color: #828282;
+            margin-bottom: 30px; }
+          #read .inner .wrap article > p {
+            font: 13px/1.3 'Overpass', sans-serif;
+            color: #626262;
+            margin-right: 20px; }
+            #read .inner .wrap article > p::after {
+              content: '';
+              width: 35px;
+              height: 2px;
+              background-color: #111;
+              display: block;
+              margin-top: 30px; }
+
   #footer .inner {
     width: 100%; }
     #footer .inner .wrap {
@@ -1497,6 +1561,40 @@ fieldset {
         padding: 0px; }
     #visual .inner .bottom .second {
       display: none; }
+
+  /* brand */
+  #brand {
+    padding: 120px 30px; }
+    #brand .inner h1 {
+      font: bold 21px/1 'Overpass'; }
+    #brand .inner .wrap {
+      flex-wrap: wrap; }
+      #brand .inner .wrap .pic {
+        width: 100%;
+        margin: 0;
+        padding: 0; }
+      #brand .inner .wrap .txt {
+        width: 100%;
+        text-align: center; }
+        #brand .inner .wrap .txt > h2 {
+          font: bold 19px/1.2 'Overpass';
+          margin-bottom: 20px;
+          margin-top: 20px; }
+        #brand .inner .wrap .txt > p {
+          font: 15px/1.5 'Overpass';
+          margin-bottom: 30px; }
+        #brand .inner .wrap .txt > a {
+          font: bold 15px/30px 'Overpass';
+          text-align: center;
+          display: inline-block;
+          transform: scale(1);
+          transition: 0.3s ease-in-out; }
+          #brand .inner .wrap .txt > a::before {
+            display: none; }
+          #brand .inner .wrap .txt > a::after {
+            display: none; }
+          #brand .inner .wrap .txt > a:hover {
+            transform: scale(1.1); }
 
   #footer .inner .wrap .top .first {
     width: 100%;
