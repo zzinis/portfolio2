@@ -1093,6 +1093,44 @@
         }
     }
 
+    /* brand */
+
+    #brand {
+        padding: 150px 40px;
+
+        .inner {
+            width: 100%;     
+    
+            h1 {
+                font: bold 23px/1 'Overpass';
+            } 
+            
+            .wrap {
+                .txt{
+                    >h2{
+                        font: bold 19px/1 'Overpass';
+                        margin-top: 10px;
+                    }
+                    >p{
+                        font: 15px/1.4 'Overpass';
+                        margin-bottom: 30px;
+                    }
+                    >a{
+                        font: bold 15px/30px 'Overpass';
+
+                        &::before{
+                            right: -90px;
+                        }
+                        
+                        &::after{
+                            right: -60px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 
     #footer{
         .inner{

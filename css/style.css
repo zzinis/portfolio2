@@ -1392,6 +1392,26 @@ fieldset {
         width: 100%;
         text-align: right; }
 
+  /* brand */
+  #brand {
+    padding: 150px 40px; }
+    #brand .inner {
+      width: 100%; }
+      #brand .inner h1 {
+        font: bold 23px/1 'Overpass'; }
+      #brand .inner .wrap .txt > h2 {
+        font: bold 19px/1 'Overpass';
+        margin-top: 10px; }
+      #brand .inner .wrap .txt > p {
+        font: 15px/1.4 'Overpass';
+        margin-bottom: 30px; }
+      #brand .inner .wrap .txt > a {
+        font: bold 15px/30px 'Overpass'; }
+        #brand .inner .wrap .txt > a::before {
+          right: -90px; }
+        #brand .inner .wrap .txt > a::after {
+          right: -60px; }
+
   #footer .inner {
     width: 100%; }
     #footer .inner .wrap {
