@@ -27,42 +27,42 @@ fieldset {
 /*header*/
 #header_sub {
   width: 100%; }
-  #header_sub .inner {
+  #header_sub > .inner {
     width: 1180px;
     height: 150px;
     margin: 0 auto;
     position: relative; }
-    #header_sub .inner h1 {
+    #header_sub > .inner > h1 {
       position: absolute;
       left: 0;
       top: 50%;
       transform: translateY(-50%); }
-      #header_sub .inner h1 a {
+      #header_sub > .inner > h1 a {
         font: 24px/1  'Open Sans', sans-serif;
         color: #1F2120; }
-    #header_sub .inner .menuWeb #gnb {
+    #header_sub > .inner .menuWeb #gnb {
       position: absolute;
       top: 50%;
       right: 26%;
       transform: translateY(-50%); }
-      #header_sub .inner .menuWeb #gnb li {
+      #header_sub > .inner .menuWeb #gnb li {
         display: inline-block;
         margin-left: 35px;
         display: inline-block; }
-        #header_sub .inner .menuWeb #gnb li a {
+        #header_sub > .inner .menuWeb #gnb li a {
           font: bold 14px/1 'Overpass', sans-serif;
           color: #1F2120; }
-    #header_sub .inner .menuWeb .form-text {
+    #header_sub > .inner .menuWeb .form-text {
       position: absolute;
       top: 50%;
       right: 12%;
       transform: translateY(-50%);
       background-color: #fff; }
-      #header_sub .inner .menuWeb .form-text p {
+      #header_sub > .inner .menuWeb .form-text p {
         border-bottom: 1px solid #111;
         width: 130px;
         display: inline-block; }
-        #header_sub .inner .menuWeb .form-text p > #searchText {
+        #header_sub > .inner .menuWeb .form-text p > #searchText {
           width: 80%;
           height: 100%;
           padding: 5px 20px;
@@ -72,35 +72,35 @@ fieldset {
           vertical-align: middle;
           background: transparent;
           margin-right: 5px; }
-        #header_sub .inner .menuWeb .form-text p > .searchBtn {
+        #header_sub > .inner .menuWeb .form-text p > .searchBtn {
           width: 5%;
           height: 20px;
           font: bold 15px/20px 'arial';
           border: none;
           background-color: #fff;
           cursor: pointer; }
-    #header_sub .inner .menuWeb .util {
+    #header_sub > .inner .menuWeb .util {
       position: absolute;
       top: 50%;
       right: -3%;
       transform: translateY(-50%); }
-      #header_sub .inner .menuWeb .util::after {
+      #header_sub > .inner .menuWeb .util::after {
         content: '';
         display: block;
         clear: both; }
-      #header_sub .inner .menuWeb .util li {
+      #header_sub > .inner .menuWeb .util li {
         float: left;
         margin-right: 35px; }
-        #header_sub .inner .menuWeb .util li:hover:nth-of-type(1) a {
+        #header_sub > .inner .menuWeb .util li:hover:nth-of-type(1) a {
           color: red; }
-        #header_sub .inner .menuWeb .util li:hover:nth-of-type(2) a {
+        #header_sub > .inner .menuWeb .util li:hover:nth-of-type(2) a {
           font-size: 17px; }
-        #header_sub .inner .menuWeb .util li:hover:nth-of-type(3) a {
+        #header_sub > .inner .menuWeb .util li:hover:nth-of-type(3) a {
           color: lightskyblue; }
-        #header_sub .inner .menuWeb .util li a {
+        #header_sub > .inner .menuWeb .util li a {
           color: #1F2120;
           font-size: 16px; }
-    #header_sub .inner .btnCall {
+    #header_sub > .inner .btnCall {
       position: absolute;
       top: 50%;
       right: 30px;
@@ -108,7 +108,7 @@ fieldset {
       width: 20px;
       height: 20px;
       display: none; }
-      #header_sub .inner .btnCall::before {
+      #header_sub > .inner .btnCall::before {
         content: '';
         display: block;
         width: 100%;
@@ -119,7 +119,7 @@ fieldset {
         left: 0;
         transform: rotate(0deg);
         transition: top 0.5s 0s, transform 0.5s 0.5s; }
-      #header_sub .inner .btnCall::after {
+      #header_sub > .inner .btnCall::after {
         content: '';
         display: block;
         width: 100%;
@@ -130,7 +130,7 @@ fieldset {
         left: 0;
         transform: rotate(0deg);
         transition: bottom 0.5s 0s, transform 0.5s 0.5s; }
-      #header_sub .inner .btnCall span {
+      #header_sub > .inner .btnCall span {
         display: block;
         width: 100%;
         height: 2px;
@@ -141,18 +141,18 @@ fieldset {
         margin-top: -1px;
         left: 0;
         transition: 0.5s; }
-      #header_sub .inner .btnCall.on::before {
+      #header_sub > .inner .btnCall.on::before {
         transform: rotate(45deg);
         top: 50%;
         margin-top: -1px; }
-      #header_sub .inner .btnCall.on::after {
+      #header_sub > .inner .btnCall.on::after {
         transform: rotate(-45deg);
         bottom: 50%;
         margin-bottom: -1px; }
-      #header_sub .inner .btnCall.on span {
+      #header_sub > .inner .btnCall.on span {
         transform: translateX(100%);
         opacity: 0; }
-    #header_sub .inner .menuMo {
+    #header_sub > .inner .menuMo {
       position: fixed;
       top: 0;
       left: -270px;
@@ -163,18 +163,18 @@ fieldset {
       padding: 35px 30px;
       box-sizing: border-box;
       z-index: 10; }
-      #header_sub .inner .menuMo h1 {
+      #header_sub > .inner .menuMo h1 {
         border-bottom: 1px solid #666;
         padding-bottom: 30px; }
-        #header_sub .inner .menuMo h1 a {
+        #header_sub > .inner .menuMo h1 a {
           display: block;
           font: bold 24px/1 'arial';
           color: #fff;
           text-align: center; }
-        #header_sub .inner .menuMo h1 span {
+        #header_sub > .inner .menuMo h1 span {
           font-size: 12px;
           color: #aaa; }
-      #header_sub .inner .menuMo #gnbMo li a {
+      #header_sub > .inner .menuMo #gnbMo li a {
         display: block;
         width: 100%;
         padding: 20px 0;
@@ -182,7 +182,7 @@ fieldset {
         font: bold 14px/1 'arial';
         color: #888;
         text-align: center; }
-      #header_sub .inner .menuMo.on {
+      #header_sub > .inner .menuMo.on {
         left: 0; }
 
 /*content*/
@@ -1348,6 +1348,50 @@ fieldset {
       #header .inner .btnCall {
         display: block; }
 
+  /* visual */
+  #visual {
+    height: calc(100vh - 101px);
+    padding: 0px 30px;
+    box-sizing: border-box; }
+    #visual .inner {
+      width: 100%; }
+      #visual .inner .wrap {
+        width: 100%;
+        display: flex; }
+        #visual .inner .wrap .left {
+          width: 25%;
+          margin-right: 5%;
+          padding-bottom: 20px;
+          display: flex;
+          flex-wrap: wrap;
+          align-content: space-between; }
+          #visual .inner .wrap .left h1 {
+            font: 4vh/1 'Overpass', sans-serif;
+            color: #111;
+            margin-bottom: 30px; }
+          #visual .inner .wrap .left a {
+            display: none; }
+          #visual .inner .wrap .left > p {
+            display: none; }
+        #visual .inner .wrap .right {
+          width: 65%;
+          height: 65vh;
+          padding-bottom: 20px;
+          display: flex;
+          flex-wrap: wrap;
+          align-content: space-between;
+          margin-right: 0px; }
+          #visual .inner .wrap .right .txtbox {
+            width: 100%;
+            display: flex; }
+          #visual .inner .wrap .right .num {
+            display: none; }
+      #visual .inner .bottom .first {
+        display: none; }
+      #visual .inner .bottom .second {
+        width: 100%;
+        text-align: right; }
+
   #footer .inner {
     width: 100%; }
     #footer .inner .wrap {
@@ -1368,6 +1412,50 @@ fieldset {
           width: 25%; } }
 /*mobile*/
 @media screen and (max-width: 593px) {
+  #header .inner .btnCall {
+    color: #fff; }
+  #header .inner .menuMo {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background: #474141;
+    transition: 0.5s;
+    padding: 35px 30px;
+    box-sizing: border-box;
+    z-index: 10; }
+    #header .inner .menuMo h1 {
+      border-bottom: none; }
+      #header .inner .menuMo h1 a {
+        display: block;
+        font: bold 24px/1 'arial';
+        color: #fff;
+        text-align: left;
+        padding-bottom: 20px; }
+      #header .inner .menuMo h1 span {
+        display: none; }
+    #header .inner .menuMo #gnbMo::before {
+      content: 'Menu';
+      display: block;
+      font: bold 15px/1 'Open Sans';
+      color: #777;
+      padding: 10px 0px 20px 50px; }
+    #header .inner .menuMo #gnbMo li {
+      width: 70%; }
+      #header .inner .menuMo #gnbMo li a {
+        display: block;
+        padding: 20px 50px;
+        border-bottom: none;
+        font: bold 30px/1 'arial';
+        color: #fff;
+        text-align: left;
+        width: 100%; }
+        #header .inner .menuMo #gnbMo li a:hover {
+          border-bottom: 3px solid royalblue; }
+    #header .inner .menuMo.on {
+      left: 0; }
+
   #footer .inner .wrap .top .first {
     width: 100%;
     margin-bottom: 50px;
