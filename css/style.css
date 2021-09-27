@@ -1039,7 +1039,7 @@ fieldset {
 /* introduce */
 #introduce {
   width: 100%;
-  padding: 150px 0; }
+  padding: 90px 0; }
   #introduce .inner {
     width: 1180px;
     margin: 0 auto; }
@@ -1075,7 +1075,7 @@ fieldset {
 /* box1*/
 #box1 {
   width: 100%;
-  padding: 200px 0; }
+  padding: 70px 0; }
   #box1 .inner {
     width: 1180px;
     margin: 0 auto; }
@@ -1120,7 +1120,7 @@ fieldset {
 /* read */
 #read {
   width: 100%;
-  padding: 150px 0; }
+  padding: 130px 0; }
   #read .inner {
     width: 1180px;
     margin: 0 auto; }
@@ -1196,7 +1196,7 @@ fieldset {
 /* commnet */
 #comment {
   width: 100%;
-  padding: 150px 0; }
+  padding: 130px 0; }
   #comment .inner {
     width: 1180px;
     margin: 0 auto; }
