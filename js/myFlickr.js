@@ -57,21 +57,22 @@ $.ajax({
     console.err("데이터를 호출하는데 실패했습니다"); 
 })
 
-
 $("body").on("click", "#gallery ul li", function(e){
-    e.preventDefault(); 
+    e.preventDefault();
 
-    let imgSrc = $(this).children("a").attr("href"); 
+    let imgSrc = $(this).children("a").attr("href");
 
     $("body").append(
-        $("<div class='pop'>")
+        $("<div class = 'pop'>")
             .append(
-                $("<img>").attr({ src : imgSrc}),
+                $("<img>").attr({src: imgSrc}),
                 $("<span>").text("close")
             )
     )
 });
 
 $("body").on("click", ".pop span", function(){
-    $(".pop").remove(); 
+    $(".pop").fadeOut(1000,function(){
+        $(this).remove();
+    })
 });
