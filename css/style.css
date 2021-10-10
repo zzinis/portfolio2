@@ -758,7 +758,8 @@ fieldset {
       transform: translateY(-50%);
       width: 20px;
       height: 20px;
-      display: none; }
+      display: none;
+      z-index: 11; }
       #header .inner .btnCall::before {
         content: '';
         display: block;
@@ -806,8 +807,8 @@ fieldset {
     #header .inner .menuMo {
       position: fixed;
       top: 0;
-      left: -270px;
-      width: 270px;
+      right: -100%;
+      width: 100%;
       height: 100vh;
       background: #333;
       transition: 0.5s;
@@ -815,26 +816,26 @@ fieldset {
       box-sizing: border-box;
       z-index: 10; }
       #header .inner .menuMo h1 {
-        border-bottom: 1px solid #666;
-        padding-bottom: 30px; }
+        padding-bottom: 50px;
+        padding-left: 20px; }
         #header .inner .menuMo h1 a {
           display: block;
-          font: bold 24px/1 'arial';
-          color: #fff;
-          text-align: center; }
+          font: bold 24px/1 'Open Sans';
+          color: #fff; }
         #header .inner .menuMo h1 span {
           font-size: 12px;
           color: #aaa; }
-      #header .inner .menuMo #gnbMo li a {
-        display: block;
-        width: 100%;
-        padding: 20px 0;
-        border-bottom: 1px solid #444;
-        font: bold 14px/1 'arial';
-        color: #888;
-        text-align: center; }
+      #header .inner .menuMo #gnbMo {
+        margin-top: 50px; }
+        #header .inner .menuMo #gnbMo li a {
+          display: block;
+          width: 100%;
+          padding: 15px 0;
+          font: bold 50px/1 'Open Sans';
+          color: #888;
+          text-align: center; }
       #header .inner .menuMo.on {
-        left: 0; }
+        right: 0; }
 
 /* visual */
 #visual {
@@ -1350,6 +1351,8 @@ fieldset {
         display: none; }
       #header .inner .btnCall {
         display: block; }
+        #header .inner .btnCall.on::before, #header .inner .btnCall.on::after {
+          background: #fff; }
 
   /* visual */
   #visual {
