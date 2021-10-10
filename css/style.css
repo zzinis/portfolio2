@@ -577,6 +577,40 @@ fieldset {
       background-color: #444444;
       text-align: center; }
 
+.youtube {
+  width: 100%; }
+  .youtube .sub_visual {
+    background: #ebebeb; }
+  .youtube .inner #vidGallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative; }
+    .youtube .inner #vidGallery article {
+      width: 50%;
+      margin-bottom: 10px;
+      position: relative;
+      transition: 0.5s; }
+      .youtube .inner #vidGallery article a img {
+        object-fit: cover; }
+      .youtube .inner #vidGallery article .con {
+        transition: 0.5s; }
+        .youtube .inner #vidGallery article .con h2 {
+          position: absolute;
+          bottom: 22%;
+          left: 5%;
+          display: none;
+          transition: 0.5s; }
+        .youtube .inner #vidGallery article .con p {
+          display: none; }
+        .youtube .inner #vidGallery article .con span {
+          display: none; }
+      .youtube .inner #vidGallery article:hover {
+        filter: saturate(30%); }
+        .youtube .inner #vidGallery article:hover .con h2 {
+          background-color: #ebebeb;
+          display: block; }
+
 .department .sub_visual {
   background: url(../img/bg1.jpg) no-repeat center/cover;
   opacity: 0.7; }

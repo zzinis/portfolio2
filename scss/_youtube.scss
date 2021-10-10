@@ -1,0 +1,59 @@
+.youtube{
+    width: 100%;
+
+    .sub_visual{
+        background: #ebebeb;
+    }
+
+    .inner{
+
+        #vidGallery{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+
+            article{
+                width: 50%;
+                margin-bottom: 10px;
+                position: relative;
+                transition: 0.5s;
+                a{
+                    img{
+                        object-fit: cover;
+                    }
+                }
+                .con{
+                    transition: 0.5s;
+                    h2{
+                        position: absolute;
+                        bottom: 22%;
+                        left: 5%;
+                        display: none;
+                        transition: 0.5s;
+                    }
+                    p{
+                        display: none;
+                    }
+                    span{
+                        display: none;
+                    }
+
+                }
+                &:hover{
+                    filter: saturate(30%);
+                    
+                    .con{
+
+                        h2{
+                            background-color: #ebebeb;
+                            display: block;
+                        }
+                    }
+                }
+        
+            }
+
+        }
+    }
+}

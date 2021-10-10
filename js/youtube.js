@@ -3,14 +3,12 @@ $.ajax({
     dataType : 'jsonp',
     data :{
         part : "snippet",
-        key: "AIzaSyDADYcd0NuFdvXHQT6pTPiGJLbUS7vppKM",
-        maxResults :10,
-        playlistId : "PL7bRBTzgXVld3fPyDIJwzH3Dltj3e8bVU"
+        key: "AIzaSyBWdI1Ln_7CG7buBj84llJDk9-oaDu8NCE",
+        maxResults :6,
+        playlistId : "PL7bRBTzgXVleF23FJ2Y9VsfdVcDA4kg83"
     }
 })
 .success(function(data){
-    // console.log(data);
-    
     let items = data.items;
     console.log(items);
 
@@ -26,24 +24,30 @@ $.ajax({
 
         let date = data.snippet.publishedAt;
         date = date.substr(0,10)
-        // date = date.split("T");
 
         $("#vidGallery")
             .append(
                 $("<article>")
-                    .append(
-                        $("<a>").attr({ href : data.snippet.resourceId.videoId})
+                .append(
+                    $("<a>").attr({ href : data.snippet.resourceId.videoId})
+                            .append(
+                                $("<img>")
+                                .attr({ 
+                                    src : data.snippet.thumbnails.high.url,
+                                    width: "100%"
+
+                                })
+                            ),
+                    $("<div class = 'con'>")
                                 .append(
-                                    $("<img>").attr({ src : data.snippet.thumbnails.high.url})
-                                ),
-                        $("<div class = 'con'>")
-                                    .append(
-                                        $("<h2>").text(data.snippet.title),
-                                        $("<p>").text(txt),
-                                        $("<span>").text(date)
-                                    )
-                    )
+                                    $("<h2>").text(data.snippet.title),
+                                    $("<p>").text(txt),
+                                    $("<span>").text(date)
+                                )
+                )
+
                     
+
             )
 
     });
