@@ -591,25 +591,32 @@ fieldset {
       margin-bottom: 10px;
       position: relative;
       transition: 0.5s; }
-      .youtube .inner #vidGallery article a img {
-        object-fit: cover; }
-      .youtube .inner #vidGallery article .con {
-        transition: 0.5s; }
-        .youtube .inner #vidGallery article .con h2 {
-          position: absolute;
-          bottom: 22%;
-          left: 5%;
-          display: none;
+      .youtube .inner #vidGallery article a {
+        display: block;
+        width: 100%;
+        height: 330px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        transform: scale(0.9); }
+        .youtube .inner #vidGallery article a img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
           transition: 0.5s; }
+      .youtube .inner #vidGallery article .con {
+        transition: 0.5s;
+        text-align: center;
+        margin-bottom: 20px; }
+        .youtube .inner #vidGallery article .con h2 {
+          font: bold 16px/1 'Open Sans'; }
         .youtube .inner #vidGallery article .con p {
           display: none; }
         .youtube .inner #vidGallery article .con span {
           display: none; }
       .youtube .inner #vidGallery article:hover {
-        filter: saturate(30%); }
-        .youtube .inner #vidGallery article:hover .con h2 {
-          background-color: #ebebeb;
-          display: block; }
+        filter: saturate(60%); }
+        .youtube .inner #vidGallery article:hover a img {
+          transform: scale(1.1); }
 
 .department .sub_visual {
   background: url(../img/bg1.jpg) no-repeat center/cover;

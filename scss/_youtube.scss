@@ -19,18 +19,27 @@
                 position: relative;
                 transition: 0.5s;
                 a{
+                    display: block;
+                    width: 100%;
+                    height: 330px;
+                    overflow: hidden;
+                    margin-bottom: 20px;
+                    transform: scale(0.9);
                     img{
+                        width: 100%;
+                        height: 100%;
                         object-fit: cover;
+                        transition: 0.5s;
+
                     }
                 }
                 .con{
                     transition: 0.5s;
+                    text-align: center;
+                    margin-bottom: 20px;
                     h2{
-                        position: absolute;
-                        bottom: 22%;
-                        left: 5%;
-                        display: none;
-                        transition: 0.5s;
+                        font: bold 16px/1 'Open Sans';
+
                     }
                     p{
                         display: none;
@@ -41,15 +50,15 @@
 
                 }
                 &:hover{
-                    filter: saturate(30%);
+                    filter: saturate(60%);
                     
-                    .con{
-
-                        h2{
-                            background-color: #ebebeb;
-                            display: block;
+                    a{
+                        img{
+                            transform: scale(1.1);
                         }
                     }
+                    
+
                 }
         
             }
