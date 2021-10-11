@@ -33,9 +33,7 @@ $.ajax({
                             .append(
                                 $("<img>")
                                 .attr({ 
-                                    src : data.snippet.thumbnails.high.url,
-                                    width: "100%"
-
+                                    src : data.snippet.thumbnails.high.url
                                 })
                             ),
                     $("<div class = 'con'>")
