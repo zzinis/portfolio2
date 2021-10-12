@@ -577,6 +577,52 @@ fieldset {
       background-color: #444444;
       text-align: center; }
 
+.gallery {
+  width: 100%; }
+  .gallery .inner #gallery {
+    position: relative; }
+    .gallery .inner #gallery ul {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      border-top: 1px solid #bbb;
+      position: relative; }
+      .gallery .inner #gallery ul li {
+        width: 33.3%;
+        padding: 20px;
+        margin-bottom: 10px;
+        border-right: 1px solid #bbb; }
+        .gallery .inner #gallery ul li:nth-of-type(3n) {
+          border-right: none; }
+        .gallery .inner #gallery ul li a {
+          width: 100%;
+          display: block;
+          background: #ebebeb;
+          margin-bottom: 10px; }
+          .gallery .inner #gallery ul li a img {
+            width: 100%;
+            height: 300px;
+            transform: scale(0.6); }
+        .gallery .inner #gallery ul li > p {
+          font: 15px/1 'Open Sans';
+          margin-bottom: 15px; }
+        .gallery .inner #gallery ul li .profile {
+          border-bottom: 1px solid #bbb; }
+          .gallery .inner #gallery ul li .profile::after {
+            content: '';
+            display: block;
+            clear: both; }
+          .gallery .inner #gallery ul li .profile img {
+            display: none; }
+          .gallery .inner #gallery ul li .profile > p {
+            font: bold 15px/1 'Open Sans';
+            float: left;
+            letter-spacing: 1px; }
+          .gallery .inner #gallery ul li .profile span {
+            font: 15px/1 'Open Sans';
+            float: right;
+            margin-bottom: 20px; }
+
 .youtube {
   width: 100%; }
   .youtube .sub_visual {

@@ -3,7 +3,7 @@ $.ajax({
     dataType:"json", 
     data:{
         api_key:"fce3d5dec157a9b2bb0797070e4fd0b8", 
-        per_page:20, 
+        per_page:15, 
         format:"json",
         nojsoncallback:1, 
         privacy_filter : 5, 
@@ -17,15 +17,20 @@ $.ajax({
     $("#gallery").append("<ul>");
 
     $(items).each(function(index, data){
+        let num = index+1;
 
         let text = data.title; 
         if(!data.title){
             text = "No description in this photo"; 
         }
+        text = text.substr(0,32)
 
         $("#gallery ul")
             .append(
                 $("<li>")
+                    .append(
+                        $("<p>").text(text)
+                    )
                     .append(
                         $("<a>").attr({
                             href : "https://live.staticflickr.com/"+data.server+"/"+data.id+"_"+data.secret+"_b.jpg"
@@ -37,9 +42,10 @@ $.ajax({
                             })
                         )
                     )
-                    .append(
-                        $("<p>").text(text)
-                    )
+                    
+                    // .append(
+                    //     $("<span>").text("0" + num + "/")
+                    // )
 
                     .append(
                         $("<div class='profile'>")
@@ -47,6 +53,7 @@ $.ajax({
                                 $("<img>").attr({
                                     src : "https://www.flickr.com/buddyicons/"+data.owner+".jpg"
                                 }),
+                                $("<p>").text("0" + num +"/"),
                                 $("<span>").text(data.owner)
                             )
                     )
