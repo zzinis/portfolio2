@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio1</title>
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/main.js"></script>
+    <script defer src="js/map.js"></script>
     <script src="https://kit.fontawesome.com/a5faf288a0.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=11b9560b343e90947789ef64d18a1bdc"></script>
 </head>
 <body>
 
@@ -60,11 +61,13 @@
     </header>
 
 	<!-- sub_page -->
-    <section class="content">
+    <section class="content location">
         <div class="sub_visual"></div>
         <div class="inner">
             <h1>Location<span></span> </h1>
             <!-- 서브페이지 컨텐츠 들어가는 부분 -->
+
+            <div id="map"></div>
 
         </div>
     </section>
