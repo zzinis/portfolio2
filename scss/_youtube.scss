@@ -34,9 +34,10 @@
                     }
                 }
                 .con{
-                    transition: 0.5s;
+                    transition: 0.5s ease-in;
                     text-align: center;
                     margin-bottom: 20px;
+                    
                     h2{
                         font: bold 16px/1 'Open Sans';
                         transition: 0.5s;
@@ -52,21 +53,27 @@
                 }
                 &:hover{
                     filter: saturate(60%);
-                    
-                    a{
-                        img{
-                            transform: scale(1.1);
+
+                    article{
+                        margin-bottom: 0;
+                        a{
+                            img{
+                                transform: scale(1.1);
+                            }
                         }
                     }
+                    
 
                     .con{
                         width: 250px;
                         height: 150px;
                         background: #faedda;
-                        position: absolute;
-                        bottom: 6%;
-                        right: 0;
+                        // position: absolute;
+                        // bottom: 6%;
+                        // right: 0;
                         padding: 40px;
+                        transform: translate(135%,-80%);
+                        margin-bottom: 0;
 
                         h2{
                             font: bold 18px/1.4 'Open Sans';
