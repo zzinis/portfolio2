@@ -220,22 +220,22 @@ fieldset {
         position: absolute;
         top: 14px;
         right: 0; }
-  .content .inner {
+  .content > .inner {
     width: 1180px;
     margin: 0 auto;
     min-height: 600px;
     position: relative;
     margin-bottom: 40px; }
-    .content .inner > h2 {
+    .content > .inner > h2 {
       font: 26px/1 'Lora';
       color: #fd653f;
       margin-bottom: 20px; }
-    .content .inner > p {
+    .content > .inner > p {
       font: 15px/1 'Lora';
       color: #aaa;
       display: block;
       margin-bottom: 50px; }
-      .content .inner > p::before {
+      .content > .inner > p::before {
         content: '';
         width: 100px;
         height: 1px;
