@@ -424,119 +424,91 @@
 }
 
 
- /* brand */
-
-#brand {
+#about{
     width: 100%;
-    padding: 150px 0px;
-    background-color: #f5f2ee;
-    
-    // background-color: #f8faec;
+    padding: 150px 0;
+    background: #d9d9d3;
 
-    .inner {
+    .inner{
         width: 1180px;
         margin: 0 auto;
+        display: flex;
 
-        h1 {
-        font: bold 24px/1 'Overpass', sans-serif;
-        color: #444;
-        margin-bottom: 40px;
-        
-
-        &::after{
-            content: '';
-            display: block;
-            width: 100%;
-            height: 1px;
-            background-color: #444;
-            margin-top: 10px;
-        }
-        } 
-
-        .wrap {
-            width: 100%;
+        .left{
+            // width: 65%;
+            width: auto;
             display: flex;
-
-            .pic{
-                width: 49%;
-                height: 320px;
-                margin-right: 5%;
-                padding: 0px 20px;
-
-                img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
+            margin-right: 3%;
+            h1{
+                font: 26px/1.3 'Lora';
+                width: 38%;
             }
+            span{
+                font: 24px/1 'Lora';
+                color: orange;
+                border-bottom: 1px solid orange;
+                margin-right: 5px;
+            }
+            .wrap{
+                display: flex;
 
-            .txt{
-            width: 49%;
-            position: relative;
-
-                >h2{
-                    font: bold 21px/1 'Overpass', sans-serif;
-                    color: #444;
-                    margin-bottom: 40px;
-                }
-                >p{
-                    font: 17px/1.2 'Overpass', sans-serif;
-                    color: #555;
-                    margin-bottom: 30px;
-                }
-                >a{
-                    display: block;
-                    width: 180px;
-                    height: 30px;
-                    font: bold 16px/30px 'Overpass', sans-serif;
-                    color: #333;
-                    position: relative;
-                    transition: all 0.5s ease;
-
-                    &::before{
-                    content: '';
-                    display: inline-block;
-                    width: 46px;
-                    height: 46px;
-                    border: 1px solid #000;
-                    border-radius: 50%;
-                    position: absolute;
-                    right: -105px;
-                    top: -10px;
-                    transition: all 0.5s ease;
+                article{
+                    width: 220px;
+                    height: 350px;
+                    margin-right: 10px;
+                    .pic{
+                        width: 200px;
+                        height: 280px;
+                        background: #999;
+                        margin-bottom: 15px;
                     }
-
+                    p {
+                        font: bold 14px/1.3 'Hebo';
+                        padding-right: 6px;
+                        margin-bottom: 5px;
+                    }
                     
-                    &::after{
-                    content: '';
-                    display: inline-block;
-                    width: 60px;
-                    height: 7px;
-                    background: url(../img/btn_arrow.png) no-repeat center/cover;
-                    background-size: cover;
-                    position: absolute;
-                    right: -70px;
-                    top:10px;
-                    transition: all 0.5s ease;
-                    }
+                }
+            }
+        }
+        .right{
+            width: 35%;
+            h2{
+                font: 22px/1.3 'Lora';
+                margin-bottom: 50px;
+            }
+            span{
+                font: 20px/1 'Lora';
+                float: left;
+            }
+            ul{
+                float: right;
+                width: 55%;
+                li{
+                    margin-bottom: 10px;
 
-                    &:hover{
-
-                    &::before{
-                        transform:scale(1.1);
-                    }
                     &::after{
-                        transform:translate(10px,0);
+                        content: '';
+                        width: 100%;
+                        height: 1px;
+                        background: #111;
+                        display: block;
+                        margin-top: 8px;
                     }
+                    a{
+                        font: 18px/1 'Lora';
+                        color: #111;
+                        
+
+                        
                     }
                 }
-            
-
             }
-
         }
+
     }
 }
+
 
 /* introduce */
 
@@ -593,67 +565,116 @@
         }
     }
 }
-/* box1*/
-#box1{
+#box{
     width: 100%;
-    padding: 70px 0;
-
+    padding: 150px 0;
+    background: #f9f4f1;
     .inner{
         width: 1180px;
         margin: 0 auto;
 
         .wrap{
-        width: 100%;
-        height: 500px;
-        display: flex;
 
-        .txt{
-            width: 40%;
-            padding: 150px 0px;
-            margin-right: 20px;
-            h1{
-            font: 34px/1 'Overpass', sans-serif;
-            color: #050505;
-            margin-bottom: 30px;
+            .left{
+                float: left;
+                width: 49%;
+                margin-right: 2%;
+                padding: 150px 60px;
 
-            &::before{
-                content: '';
-                width: 100px;
-                height: 2px;
-                display: block;
-                background: #5a5a5a;
-                margin-bottom: 20px;
-            }
-            }
-            p{
-                font: 18px/1.4 'Overpass', sans-serif;
-                color: #949292;
-                margin-bottom: 40px;
+                h1{
+                    font: bold 15px/1 'Hebo';
+                    margin-bottom: 100px;
+                    color: #f0a417;
+                }
+                p{
+                    font: 600 16px/1.7 'Hebo';
+                    color: #212121;
+                    
+                }
             }
 
-            a{
-                display: block;
-                width: 150px;
-                height: 40px;
-                font: 16px/40px 'Overpass', sans-serif;
-                color: #333;
-                
-                background-color: #e7ded3;
-                text-align: center;
+            .right{
+                float: left;
+                width: 49%;
+
+                h2{
+                    font: bold 24px/1.4 'Josefin Sans';
+                    letter-spacing: -1px;
+                    margin-bottom: 50px;
+                }
+                img{
+                    width: 700px;
+                    height: 600px;
+                }
             }
+
+
         }
-
-        .pic{
-            width: 60%;
-            img{
-            width: 100%;
-            height: 500px;
-            object-fit: cover;
-            }
-        }
-    }
     }
 }
+
+
+/* box1*/
+// #box1{
+//     width: 100%;
+//     padding: 70px 0;
+
+//     .inner{
+//         width: 1180px;
+//         margin: 0 auto;
+
+//         .wrap{
+//         width: 100%;
+//         height: 500px;
+//         display: flex;
+
+//         .txt{
+//             width: 40%;
+//             padding: 150px 0px;
+//             margin-right: 20px;
+//             h1{
+//             font: 34px/1 'Overpass', sans-serif;
+//             color: #050505;
+//             margin-bottom: 30px;
+
+//             &::before{
+//                 content: '';
+//                 width: 100px;
+//                 height: 2px;
+//                 display: block;
+//                 background: #5a5a5a;
+//                 margin-bottom: 20px;
+//             }
+//             }
+//             p{
+//                 font: 18px/1.4 'Overpass', sans-serif;
+//                 color: #949292;
+//                 margin-bottom: 40px;
+//             }
+
+//             a{
+//                 display: block;
+//                 width: 150px;
+//                 height: 40px;
+//                 font: 16px/40px 'Overpass', sans-serif;
+//                 color: #333;
+                
+//                 background-color: #e7ded3;
+//                 text-align: center;
+//             }
+//         }
+
+//         .pic{
+//             width: 60%;
+//             img{
+//             width: 100%;
+//             height: 500px;
+//             object-fit: cover;
+//             }
+//         }
+//     }
+//     }
+// }
 
 /* read */
 
