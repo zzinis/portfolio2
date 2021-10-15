@@ -748,8 +748,80 @@ fieldset {
           .department .inner .top .wrap .txt article span {
             font: 18px/1.5 'Overpass', sans-serif;
             color: #222; }
+  .department .inner .company {
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px; }
+    .department .inner .company h3 {
+      text-align: center;
+      font: 25px/1 'Hebo';
+      margin-bottom: 50px; }
+    .department .inner .company .wrap {
+      position: relative; }
+      .department .inner .company .wrap::before {
+        content: '';
+        width: 1px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #e3e6e9;
+        display: block; }
+      .department .inner .company .wrap .timeline {
+        position: relative; }
+        .department .inner .company .wrap .timeline:nth-of-type(even) .date {
+          left: 50%;
+          text-align: left; }
+        .department .inner .company .wrap .timeline:nth-of-type(even) .content {
+          margin-left: 0;
+          text-align: right; }
+        .department .inner .company .wrap .timeline::before {
+          content: '';
+          display: block;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background: #e3e6e9;
+          position: absolute;
+          top: 31px;
+          left: 50%;
+          transform: translateX(-50%); }
+        .department .inner .company .wrap .timeline::after {
+          content: '';
+          display: block;
+          width: 7px;
+          height: 7px;
+          border-radius: 50%;
+          background: #131517;
+          position: absolute;
+          top: 37px;
+          left: 50%;
+          transform: translateX(-50%); }
+        .department .inner .company .wrap .timeline .date {
+          position: absolute;
+          top: 0;
+          left: 0;
+          text-align: right;
+          width: 50%; }
+          .department .inner .company .wrap .timeline .date p {
+            font: 14px/1 'Hebo';
+            color: #131517;
+            padding: 30px; }
+        .department .inner .company .wrap .timeline .content {
+          margin-left: 50%;
+          width: 50%;
+          padding: 30px; }
+          .department .inner .company .wrap .timeline .content h4 {
+            font: 16px/1 'Hebo';
+            color: #131517;
+            margin-bottom: 10px; }
+          .department .inner .company .wrap .timeline .content span {
+            font: 14px/1.4 'Hebo';
+            color: #7c7c7c; }
   .department .inner .bottom {
-    width: 100%; }
+    width: 100%;
+    margin-top: 100px; }
     .department .inner .bottom h1 {
       font: bold 23px/1 'Overpass', sans-serif;
       color: #222;
