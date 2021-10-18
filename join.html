@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio1</title>
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/main.js"></script>
+    <script defer src="js/join.js"></script>
     <script src="https://kit.fontawesome.com/a5faf288a0.js" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
@@ -101,7 +101,7 @@
 				</div>
 			</div>
 
-			<form action="/" method="post">
+			<form action="result.html" method="get">
 				<fieldset>
 					<legend class="hidden">회원가입양식폼</legend>
 
@@ -122,21 +122,21 @@
 
 						<tr>
 							<th scope="row"><label for="username">이름</label></th>
-							<td>
+							<td class="username">
 								<input type="text" name="username" id="username" required>
 							</td>
 						</tr>
 
 						<tr>
 							<th scope="row"><label for="phone">휴대폰 번호</label></th>
-							<td>
+							<td class="phone">
 								<input type="text" name="phone" id="phone">
 							</td>
 						</tr>
 
 						<tr>
 							<th scope="row"><label for="userid">아이디</label></th>
-							<td>
+							<td class="userid">
 								<input type="text" name="userid" id="userid" placeholder="아이디" required>
 								<a href="#" class="btn">중복확인</a>
 								<p class="userid1">(영문소문자/숫자 4~16자, 특수문자 사용불가)</p>
@@ -144,21 +144,20 @@
 						</tr>
 						<tr>
 							<th scope="row"><label for="pwd">비밀번호</label></th>
-							<td>
-								<input type="password" name="pwd" id="pwd" placeholder="비밀번호" required>
-								<p class="password1">영문과 숫자 조합으로 5~12자리를 사용해야 하며, 특수문자는 사용불가합니다.</ㄴp>
+							<td class="pwd">
+								<input type="password" name="pwd1" id="pwd1" placeholder="비밀번호" required>
 							</td>
 						</tr>
 						<tr>
 							<th scope="row"><label for="pwd2"> 비밀번호 확인</label></th>
-							<td>
+							<td class="pwd">
 								<input type="password" name="pwd2" id="pwd2" required>
 							</td>
 						</tr>
 
 						<tr>
 							<th scope="row"><label for="address">주소</label></th>
-							<td>
+							<td class="address">
 								<input type="text" name="address" id="address" class="add">
 								<a href="#" class="btn">우편번호 검색</a>
 								<input type="text" name="address1" id="address1" class="add1">
@@ -168,7 +167,7 @@
 						
 						<tr>
 							<th scope="row"><label for="email">E-MAIL</label> </th>
-							<td>
+							<td class="email">
 								<input type="text" name="email" id="email" >
 								@
 								<input type="text" name="email1" id="email1" >

@@ -544,7 +544,7 @@ fieldset {
     .join .inner table th {
       width: 18%;
       text-align: left;
-      font: bold 14px/1 'arial';
+      font: bold 14px/1 'Noto Sans KR';
       color: #666;
       border-right: 1px solid #e6e6e6;
       border-bottom: 1px solid #888;
@@ -558,6 +558,11 @@ fieldset {
     .join .inner table td {
       border-bottom: 1px solid #888;
       padding: 20px 30px; }
+      .join .inner table td span {
+        font: 12px/1 'Noto Sans KR';
+        color: red;
+        margin-left: 10px;
+        letter-spacing: -1px; }
     .join .inner table input[type=submit] {
       width: 150px;
       height: 40px;
@@ -601,12 +606,6 @@ fieldset {
       color: #999;
       display: inline-block;
       margin-left: 10px; }
-    .join .inner table .password1 {
-      font: 12px/1 'arial';
-      color: red;
-      display: inline-block;
-      margin-left: 10px;
-      letter-spacing: -1px; }
     .join .inner table .btn {
       display: inline-block;
       width: 100px;
