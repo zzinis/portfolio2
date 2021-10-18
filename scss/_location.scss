@@ -40,14 +40,26 @@
                 height: 550px;
 
                 .storeInfo{
-                    position: absolute;
-                    top: 15%;
-                    right: 20px;
-                    width: 280px;
-                    height: auto;
-                    z-index: 4;
-                    background-color: #fff;
-                    box-shadow: 2px 2px 8px 0 rgba(0,0,0,0.5);
+                    >div{
+                        position: absolute;
+                        top: 15%;
+                        right: 20px;
+                        width: 280px;
+                        height: auto;
+                        z-index: 4;
+                        background-color: #fff;
+                        box-shadow: 2px 2px 8px 0 rgba(0,0,0,0.5);
+                        display: none;
+                        filter: grayscale(0);
+                        &.on{
+                            display: block;
+                            padding: 0;
+                        }
+                    }
+                    
+                
+
+                    
 
                     .detail{
                         padding: 40px 20px;
@@ -80,6 +92,7 @@
                             }
                         }
                     }
+                    
                 }
             }
         }

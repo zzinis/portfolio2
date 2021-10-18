@@ -936,7 +936,7 @@ fieldset {
     .location .inner .map #map {
       width: 980px;
       height: 550px; }
-      .location .inner .map #map .storeInfo {
+      .location .inner .map #map .storeInfo > div {
         position: absolute;
         top: 15%;
         right: 20px;
@@ -944,27 +944,32 @@ fieldset {
         height: auto;
         z-index: 4;
         background-color: #fff;
-        box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.5); }
-        .location .inner .map #map .storeInfo .detail {
-          padding: 40px 20px; }
-          .location .inner .map #map .storeInfo .detail img {
-            width: 100%;
-            height: 150px;
-            margin-bottom: 20px; }
-          .location .inner .map #map .storeInfo .detail .address {
-            font: bold 15px/1 "Open Sans";
-            color: #231f20;
-            margin-bottom: 10px; }
-          .location .inner .map #map .storeInfo .detail .storeName {
-            font: bold 15px/1 "Open Sans";
-            color: #231f20;
-            margin-bottom: 30px; }
-          .location .inner .map #map .storeInfo .detail .time p {
-            font: 13px/1.5 'Open Sans';
-            color: #231f20; }
-          .location .inner .map #map .storeInfo .detail .time span {
-            font: 13px/1.5 'Open Sans';
-            color: #231f20; }
+        box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.5);
+        display: none;
+        filter: grayscale(0); }
+        .location .inner .map #map .storeInfo > div.on {
+          display: block;
+          padding: 0; }
+      .location .inner .map #map .storeInfo .detail {
+        padding: 40px 20px; }
+        .location .inner .map #map .storeInfo .detail img {
+          width: 100%;
+          height: 150px;
+          margin-bottom: 20px; }
+        .location .inner .map #map .storeInfo .detail .address {
+          font: bold 15px/1 "Open Sans";
+          color: #231f20;
+          margin-bottom: 10px; }
+        .location .inner .map #map .storeInfo .detail .storeName {
+          font: bold 15px/1 "Open Sans";
+          color: #231f20;
+          margin-bottom: 30px; }
+        .location .inner .map #map .storeInfo .detail .time p {
+          font: 13px/1.5 'Open Sans';
+          color: #231f20; }
+        .location .inner .map #map .storeInfo .detail .time span {
+          font: 13px/1.5 'Open Sans';
+          color: #231f20; }
   .location .inner .traffic {
     text-align: right;
     margin-top: 5px;
