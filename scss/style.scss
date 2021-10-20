@@ -579,6 +579,53 @@
     }
 }
 
+#box{
+    width: 100%;
+    padding: 150px 0;
+    background: #f9f4f1;
+    .inner{
+        width: 1180px;
+        margin: 0 auto;
+
+        .wrap{
+
+            .left{
+                float: left;
+                width: 49%;
+                margin-right: 2%;
+                padding: 150px 60px;
+
+                h1{
+                    font: bold 15px/1 'Hebo';
+                    margin-bottom: 100px;
+                    color: #f0a417;
+                }
+                p{
+                    font: 600 16px/1.7 'Hebo';
+                    color: #212121;
+                    
+                }
+            }
+
+            .right{
+                float: left;
+                width: 49%;
+
+                h2{
+                    font: bold 24px/1.4 'Josefin Sans';
+                    letter-spacing: -1px;
+                    margin-bottom: 50px;
+                }
+                img{
+                    width: 700px;
+                    height: 600px;
+                }
+            }
+
+
+        }
+    }
+}
 
 /* introduce */
 
@@ -635,116 +682,7 @@
         }
     }
 }
-#box{
-    width: 100%;
-    padding: 150px 0;
-    background: #f9f4f1;
-    .inner{
-        width: 1180px;
-        margin: 0 auto;
 
-        .wrap{
-
-            .left{
-                float: left;
-                width: 49%;
-                margin-right: 2%;
-                padding: 150px 60px;
-
-                h1{
-                    font: bold 15px/1 'Hebo';
-                    margin-bottom: 100px;
-                    color: #f0a417;
-                }
-                p{
-                    font: 600 16px/1.7 'Hebo';
-                    color: #212121;
-                    
-                }
-            }
-
-            .right{
-                float: left;
-                width: 49%;
-
-                h2{
-                    font: bold 24px/1.4 'Josefin Sans';
-                    letter-spacing: -1px;
-                    margin-bottom: 50px;
-                }
-                img{
-                    width: 700px;
-                    height: 600px;
-                }
-            }
-
-
-        }
-    }
-}
-
-
-/* box1*/
-// #box1{
-//     width: 100%;
-//     padding: 70px 0;
-
-//     .inner{
-//         width: 1180px;
-//         margin: 0 auto;
-
-//         .wrap{
-//         width: 100%;
-//         height: 500px;
-//         display: flex;
-
-//         .txt{
-//             width: 40%;
-//             padding: 150px 0px;
-//             margin-right: 20px;
-//             h1{
-//             font: 34px/1 'Overpass', sans-serif;
-//             color: #050505;
-//             margin-bottom: 30px;
-
-//             &::before{
-//                 content: '';
-//                 width: 100px;
-//                 height: 2px;
-//                 display: block;
-//                 background: #5a5a5a;
-//                 margin-bottom: 20px;
-//             }
-//             }
-//             p{
-//                 font: 18px/1.4 'Overpass', sans-serif;
-//                 color: #949292;
-//                 margin-bottom: 40px;
-//             }
-
-//             a{
-//                 display: block;
-//                 width: 150px;
-//                 height: 40px;
-//                 font: 16px/40px 'Overpass', sans-serif;
-//                 color: #333;
-                
-//                 background-color: #e7ded3;
-//                 text-align: center;
-//             }
-//         }
-
-//         .pic{
-//             width: 60%;
-//             img{
-//             width: 100%;
-//             height: 500px;
-//             object-fit: cover;
-//             }
-//         }
-//     }
-//     }
-// }
 
 /* read */
 
@@ -1285,40 +1223,39 @@
         }
     }
 
-    /* brand */
+    #box{
+        padding: 60px 40px;
 
-    #brand {
-        padding: 150px 40px;
-
-        .inner {
-            width: 100%;     
+        .inner{
+            width: 100%;
     
-            h1 {
-                font: bold 23px/1 'Overpass';
-            } 
-            
-            .wrap {
-                .txt{
-                    >h2{
-                        font: bold 19px/1 'Overpass';
-                        margin-top: 10px;
-                    }
-                    >p{
-                        font: 15px/1.4 'Overpass';
-                        margin-bottom: 30px;
-                    }
-                    >a{
-                        font: bold 15px/30px 'Overpass';
-
-                        &::before{
-                            right: -90px;
-                        }
-                        
-                        &::after{
-                            right: -60px;
-                        }
+            .wrap{
+                width: 100%;
+    
+                .left{
+                    width: 100%;
+                    margin-right: 0%;
+                    padding: 50px 60px;
+    
+                    h1{
+                        margin-bottom: 50px;
                     }
                 }
+    
+                .right{
+                    width: 100%;
+                    text-align: center;
+    
+                    h2{
+                        margin-bottom: 30px;
+                    }
+                    img{
+                        width: 100%;
+                        height: 500px;
+                    }
+                }
+    
+    
             }
         }
     }

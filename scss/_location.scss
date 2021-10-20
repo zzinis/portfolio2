@@ -37,7 +37,7 @@
             width: 100%;
             display: flex;
             position: relative;
-            margin-bottom: 40px;
+            margin-bottom: 60px;
             
 
             .store{
@@ -127,7 +127,7 @@
             margin-top: 5px;
             margin-bottom: 40px;
             position: absolute;
-            bottom: 21%;
+            bottom: 33.5%;
             right: 5px;
             z-index: 5;
             li{
@@ -147,6 +147,50 @@
                     }
                 }
                 
+            }
+        }
+
+        .bottom{
+            margin-bottom: 70px;
+            .wrap{
+                display: flex;
+
+                article{
+                    width: 380px;
+                    position: relative;
+                    padding: 0px 30px;
+                    margin-right: 30px;
+
+                    h2{
+                        font: bold 20px/1 'Lora';
+                        margin-bottom: 20px;
+                        letter-spacing: 1px;
+                    }
+
+                    i{
+                        position: absolute;
+                        right: 10%;
+                        top: 0;
+                        color: #fc9191;
+                    }
+
+                    p{
+                        font: 15px/1.5 'Heebo';
+                        color: #525252;
+                        margin-bottom: 15px;
+                        border-bottom: 1px solid #9b9a9a;
+                        padding-bottom: 15px;
+                    }
+                    span{
+                        font: 14px/1 'Heebo';
+                        color: #9b9a9a;
+                        display: inline-block;
+                    }
+                    .t1{
+                        margin-right: 167px;
+                    }
+
+                }
             }
         }
 
