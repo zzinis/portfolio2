@@ -1397,7 +1397,7 @@ fieldset {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  z-index: 12;
+  z-index: 7;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   border-radius: 25px; }
   #popup .content {
@@ -2057,6 +2057,51 @@ fieldset {
               background-color: #111;
               display: block;
               margin-top: 30px; }
+
+  #content {
+    padding: 150px 30px; }
+    #content .inner {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0px; }
+      #content .inner .wrap {
+        display: block; }
+        #content .inner .wrap .left {
+          width: 100%;
+          position: relative;
+          padding: 30px 100px;
+          text-align: center; }
+          #content .inner .wrap .left .pic1 {
+            width: 350px;
+            height: 240px;
+            background: #555;
+            margin: 0 auto;
+            margin-top: 40px; }
+          #content .inner .wrap .left .pic2 {
+            display: none; }
+        #content .inner .wrap .middle {
+          width: 100%;
+          position: relative; }
+          #content .inner .wrap .middle .txt {
+            position: absolute;
+            bottom: -100px; }
+            #content .inner .wrap .middle .txt p {
+              font: 15px/1.4 'Heebo';
+              width: 85%; }
+        #content .inner .wrap .right {
+          display: none; }
+
+  /* commnet */
+  #comment {
+    width: 100%;
+    padding: 130px 30px; }
+    #comment .inner {
+      width: 100%;
+      margin: 0 auto; }
+      #comment .inner .wrap .left article {
+        width: 100%; }
+      #comment .inner .wrap .right .wrap .txt article {
+        width: 100%; }
 
   #footer .inner {
     width: 100%; }
