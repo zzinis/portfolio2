@@ -1446,65 +1446,6 @@ fieldset {
         background: #111;
         height: 30px; }
 
-#about {
-  width: 100%;
-  padding: 150px 0;
-  background: #d9d9d3; }
-  #about .inner {
-    width: 1180px;
-    margin: 0 auto;
-    display: flex; }
-    #about .inner .left {
-      width: auto;
-      display: flex;
-      margin-right: 3%; }
-      #about .inner .left h1 {
-        font: 26px/1.3 'Lora';
-        width: 38%; }
-      #about .inner .left span {
-        font: 24px/1 'Lora';
-        color: orange;
-        border-bottom: 1px solid orange;
-        margin-right: 5px; }
-      #about .inner .left .wrap {
-        display: flex; }
-        #about .inner .left .wrap article {
-          width: 220px;
-          height: 350px;
-          margin-right: 10px; }
-          #about .inner .left .wrap article .pic {
-            width: 200px;
-            height: 280px;
-            background: #999;
-            margin-bottom: 15px; }
-          #about .inner .left .wrap article p {
-            font: bold 14px/1.3 'Hebo';
-            padding-right: 6px;
-            margin-bottom: 5px; }
-    #about .inner .right {
-      width: 35%; }
-      #about .inner .right h2 {
-        font: 22px/1.3 'Lora';
-        margin-bottom: 50px; }
-      #about .inner .right span {
-        font: 20px/1 'Lora';
-        float: left; }
-      #about .inner .right ul {
-        float: right;
-        width: 55%; }
-        #about .inner .right ul li {
-          margin-bottom: 10px; }
-          #about .inner .right ul li::after {
-            content: '';
-            width: 100%;
-            height: 1px;
-            background: #111;
-            display: block;
-            margin-top: 8px; }
-          #about .inner .right ul li a {
-            font: 18px/1 'Lora';
-            color: #111; }
-
 #box {
   width: 100%;
   padding: 150px 0;
@@ -1570,6 +1511,65 @@ fieldset {
           font: 14px/1.7 'Open Sans', sans-serif;
           color: #828282;
           margin-right: 30px; }
+
+#about {
+  width: 100%;
+  padding: 150px 0;
+  background: #d9d9d3; }
+  #about .inner {
+    width: 1180px;
+    margin: 0 auto;
+    display: flex; }
+    #about .inner .left {
+      width: auto;
+      display: flex;
+      margin-right: 3%; }
+      #about .inner .left h1 {
+        font: 26px/1.3 'Lora';
+        width: 38%; }
+      #about .inner .left span {
+        font: 24px/1 'Lora';
+        color: orange;
+        border-bottom: 1px solid orange;
+        margin-right: 5px; }
+      #about .inner .left .wrap {
+        display: flex; }
+        #about .inner .left .wrap article {
+          width: 220px;
+          height: 350px;
+          margin-right: 10px; }
+          #about .inner .left .wrap article .pic {
+            width: 200px;
+            height: 280px;
+            background: #999;
+            margin-bottom: 15px; }
+          #about .inner .left .wrap article p {
+            font: bold 14px/1.3 'Hebo';
+            padding-right: 6px;
+            margin-bottom: 5px; }
+    #about .inner .right {
+      width: 35%; }
+      #about .inner .right h2 {
+        font: 22px/1.3 'Lora';
+        margin-bottom: 50px; }
+      #about .inner .right span {
+        font: 20px/1 'Lora';
+        float: left; }
+      #about .inner .right ul {
+        float: right;
+        width: 55%; }
+        #about .inner .right ul li {
+          margin-bottom: 10px; }
+          #about .inner .right ul li::after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            background: #111;
+            display: block;
+            margin-top: 8px; }
+          #about .inner .right ul li a {
+            font: 18px/1 'Lora';
+            color: #111; }
 
 /* read */
 #read {
@@ -1930,7 +1930,7 @@ fieldset {
 
   /* introduce */
   #introduce {
-    padding: 150px 20px; }
+    padding: 50px 20px; }
     #introduce .inner {
       width: 100%; }
       #introduce .inner .wrap {
@@ -1954,6 +1954,45 @@ fieldset {
               margin: 7px auto; }
           #introduce .inner .wrap article .txt p {
             margin-right: 10px; }
+
+  #about {
+    width: 100%;
+    padding: 150px 30px;
+    background: #d9d9d3; }
+    #about .inner {
+      width: 100%; }
+      #about .inner .left {
+        display: block;
+        width: 35%;
+        margin-right: 10%;
+        margin-left: 5%; }
+        #about .inner .left .wrap article {
+          margin-top: 10px; }
+          #about .inner .left .wrap article:nth-of-type(2) {
+            display: none; }
+      #about .inner .right {
+        width: 45%; }
+        #about .inner .right h2 {
+          font: 22px/1.3 'Lora';
+          margin-bottom: 50px; }
+        #about .inner .right span {
+          font: 20px/1 'Lora';
+          float: left; }
+        #about .inner .right ul {
+          width: 100%;
+          margin-top: 30px; }
+          #about .inner .right ul li {
+            margin-bottom: 10px; }
+            #about .inner .right ul li::after {
+              content: '';
+              width: 100%;
+              height: 1px;
+              background: #111;
+              display: block;
+              margin-top: 8px; }
+            #about .inner .right ul li a {
+              font: 18px/1 'Lora';
+              color: #111; }
 
   /* read */
   #read {
