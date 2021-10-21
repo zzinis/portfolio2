@@ -181,14 +181,20 @@
                         border-bottom: 1px solid #9b9a9a;
                         padding-bottom: 15px;
                     }
-                    span{
-                        font: 14px/1 'Heebo';
-                        color: #9b9a9a;
-                        display: inline-block;
+
+                    .txt{
+                        display: flex;
+                        justify-content: space-between;
+
+                        span{
+                            
+                            font: 14px/1 'Heebo';
+                            color: #9b9a9a;
+                            display: inline-block;
+
+                        }
                     }
-                    .t1{
-                        margin-right: 167px;
-                    }
+
 
                 }
             }
