@@ -295,3 +295,108 @@
 
     }
 }
+
+@media screen and(max-width:1179px) {
+    .location{
+
+        .inner{
+            width: 100%;
+            padding: 0px 30px;
+    
+            >.top{
+                position: relative;
+                text-align: center;
+                h2{
+                    font: 26px/1 'Lora';            
+                }
+                p{
+                    font: 14px/1 'Open Sans';
+                }
+                span{
+                    font: 14px/1.6 'Roboto';
+                }
+            }
+
+            .map{
+
+                margin-bottom: 0px;
+                
+    
+                .store{
+                    width: 200px;
+                    border-right: 1px solid #111;
+                    padding: 30px 20px 30px 30px;    
+                    p{
+                        a{
+                            font: 14px/1.4 '맑은고딕';
+                            margin-bottom: 25px;
+                            letter-spacing: -0.4px;
+                            color: #bdbcbc;
+                            display: block;
+                        }
+    
+                        &.on{
+                            a{
+                                font: bold 14px/1.4 '맑은고딕';
+                                color: #231f20;
+                            }
+                            
+                        }
+                        
+                    }
+                }
+    
+                #map{
+                    width: 980px;
+                    height: 550px;
+    
+                    .storeInfo{
+                        
+                        .detail{
+                            display: none;
+                        }
+                        
+                    }
+                }
+            }
+            
+            .traffic{
+                margin-bottom: 60px;
+                position: relative;
+                bottom: 0;
+                right: 0;
+
+            }
+    
+            .bottom{
+                margin-bottom: 70px;
+                .wrap{
+                    display: flex;
+    
+                    article{
+                        width: 380px;
+                        position: relative;
+                        padding: 0px;
+                        margin-right: 20px;
+
+                    }
+                }
+            }
+    
+            .faq{
+
+                .wrap{
+
+                    .right{
+    
+                        span{
+                            margin-right: 0px;
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+    
+}
