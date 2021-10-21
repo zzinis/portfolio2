@@ -979,6 +979,14 @@ fieldset {
           font: 15px/1.5 'Overpass', sans-serif;
           color: #555; }
 
+@media screen and (max-width: 1179px) {
+  .department .inner {
+    width: 100%;
+    padding: 0px 30px; }
+    .department .inner .top .wrap .txt article span {
+      display: none; }
+    .department .inner .bottom .wrap {
+      justify-content: space-evenly; } }
 .location .inner {
   width: 1180px;
   margin: 0 auto; }
