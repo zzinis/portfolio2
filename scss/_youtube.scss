@@ -116,3 +116,34 @@
         cursor: pointer;
     }
 }
+
+@media screen and(max-width:1179px) {
+    .youtube{
+    
+        .inner{
+            width: 100%;
+    
+            #vidGallery{
+    
+                article{
+
+                    &:hover{                      
+    
+                        .con{
+                            width: auto;
+                            height: auto;
+                            background: #fff;
+                            padding: 0px;
+                            transform: none;
+    
+                            h2{
+                                font: bold 16px/1.4 'Open Sans';
+                            }
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
