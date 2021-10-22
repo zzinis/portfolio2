@@ -89,6 +89,7 @@
                 }
                 p{
                     font: 14px/1.4 'Open Sans';
+                    margin-bottom: 10px;
                 }
             }
         }
@@ -198,6 +199,34 @@
     .community .inner {
         width: 100%;
         padding: 0px 30px;
+
+        .top{
+            .wrap{
+
+                article{
+                    width: 380px;
+                    height: 180px;
+                    margin-right: 20px;
+                    padding: 30px;
+                    border: 1px solid #bbb;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+    
+                    i{
+                        font-size: 25px;
+                        margin-bottom: 10px;
+                    }
+                    h2{
+                        font: bold 18px/1 'Open Sans';
+                        margin-bottom: 20px;
+                    }
+                    p{
+                        display: none;
+                    }
+                }
+            }
+        }
         
         table {
             td {
@@ -239,6 +268,7 @@
     }
     .community .inner {
         padding: 0px 35px;  
+        
         table {
             td {
                 padding: 16px;
