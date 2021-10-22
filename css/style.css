@@ -1044,24 +1044,28 @@ fieldset {
       margin-bottom: 60px;
       color: #5f5f5f; }
   .location .inner .map {
-    border: 1px solid #111;
+    border: 1px solid #575757;
     width: 100%;
     display: flex;
     position: relative;
     margin-bottom: 60px; }
     .location .inner .map .store {
       width: 200px;
-      border-right: 1px solid #111;
-      padding: 30px 20px 30px 30px; }
+      border-right: 1px solid #575757;
+      padding: 40px 20px 30px 30px;
+      background: #ececec; }
       .location .inner .map .store p a {
-        font: 14px/1.4 '맑은고딕';
-        margin-bottom: 25px;
+        font: 15px/1.5 'Overpass';
+        margin-bottom: 35px;
         letter-spacing: -0.4px;
-        color: #bdbcbc;
-        display: block; }
+        color: #575555;
+        display: block;
+        transition: 0.5s; }
       .location .inner .map .store p.on a {
-        font: bold 14px/1.4 '맑은고딕';
-        color: #231f20; }
+        font: bold 15px/1.5 'Overpass';
+        color: #575555; }
+      .location .inner .map .store p:hover a {
+        border-bottom: 1px solid #575555; }
     .location .inner .map #map {
       width: 980px;
       height: 550px; }
