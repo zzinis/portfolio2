@@ -557,11 +557,11 @@ fieldset {
             color: #8f8f8f;
             padding-top: 5px; }
             .join .inner .joinbox .inner ul li .txtbox p {
-              font: 13px/1 'arial'; }
+              font: 13px/1 'Noto Sans KR'; }
             .join .inner .joinbox .inner ul li .txtbox span {
-              font: 15px/1 'arial'; }
+              font: 15px/1 'Noto Sans KR'; }
   .join .inner h2 {
-    font: bold 18px/1 'arial';
+    font: bold 18px/1 'Open Sans';
     color: #555;
     margin-bottom: 20px; }
   .join .inner .hidden {
@@ -613,14 +613,14 @@ fieldset {
       height: 40px;
       border: 3px solid #111;
       background-color: #111;
-      font: 14px/40px 'arial';
+      font: 14px/30px 'Noto Sans KR';
       color: #fff; }
     .join .inner table input[type=reset] {
       width: 150px;
       height: 40px;
       border: 3px solid #000;
       background-color: #fff;
-      font: 14px/40px 'arial';
+      font: 14px/30px 'Noto Sans KR';
       color: #111;
       margin: 0 20px; }
     .join .inner table input[type=text], .join .inner table input[type=password] {
@@ -647,15 +647,22 @@ fieldset {
       display: block;
       width: 440px; }
     .join .inner table .userid1 {
-      font: 12px/1 'arial';
+      font: 12px/1 'Noto Sans KR';
       color: #999;
       display: inline-block;
       margin-left: 10px; }
+    .join .inner table .sns p, .join .inner table .sms p {
+      font: 14px/1 'Noto Sans KR';
+      margin-bottom: 10px;
+      color: #888; }
+    .join .inner table .sns label, .join .inner table .sms label {
+      font: 14px/1 'Noto Sans KR';
+      margin-left: 5px; }
     .join .inner table .btn {
       display: inline-block;
       width: 100px;
       height: 40px;
-      font: 13px/40px 'arial';
+      font: 13px/40px 'Noto Sans KR';
       color: #fff;
       background-color: #444444;
       text-align: center; }
@@ -693,7 +700,7 @@ fieldset {
         width: 250px; }
       .join .inner table .btn {
         width: 80px;
-        font: 12px/40px 'arial';
+        font: 12px/40px 'Noto Sans KR';
         margin: 5px 0; } }
 .gallery {
   width: 100%; }

@@ -124,14 +124,14 @@
 						<tr>
 							<th scope="row"><label for="username">이름</label></th>
 							<td class="username">
-								<input type="text" name="username" id="username" required>
+								<input type="text" name="username" id="username" placeholder="이름" required>
 							</td>
 						</tr>
 
 						<tr>
 							<th scope="row"><label for="phone">휴대폰 번호</label></th>
 							<td class="phone">
-								<input type="text" name="phone" id="phone">
+								<input type="text" name="phone" id="phone" placeholder="휴대폰 번호">
 							</td>
 						</tr>
 
@@ -152,24 +152,24 @@
 						<tr>
 							<th scope="row"><label for="pwd2"> 비밀번호 확인</label></th>
 							<td class="pwd">
-								<input type="password" name="pwd2" id="pwd2" required>
+								<input type="password" name="pwd2" id="pwd2" placeholder="비밀번호 확인" required>
 							</td>
 						</tr>
 
 						<tr>
 							<th scope="row"><label for="address">주소</label></th>
 							<td class="address">
-								<input type="text" name="address" id="address" class="add">
+								<input type="text" name="address" id="address" class="add" placeholder="우편번호">
 								<a href="#" class="btn">우편번호 검색</a>
-								<input type="text" name="address1" id="address1" class="add1">
-								<input type="text" name="address2" id="address2" class="add2">
+								<input type="text" name="address1" id="address1" class="add1" placeholder="주소" >
+								<input type="text" name="address2" id="address2" class="add2" placeholder="상세주소">
 							</td>
 						</tr>
 						
 						<tr>
 							<th scope="row"><label for="email">E-MAIL</label> </th>
 							<td class="email">
-								<input type="text" name="email" id="email" >
+								<input type="text" name="email" id="email" placeholder="email">
 								@
 								<input type="text" name="email1" id="email1" >
 
@@ -182,6 +182,26 @@
 									<option value="yahoo">yahoo.com</option>
 
 								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="sns">이메일 수신동의</label></th>
+							<td class="sns">
+								<p>관련된 정보의 이메일 수신에 동의합니다.</p>
+								<input type="radio" name="snsagree" id="snsagree">
+								<label for="agreeY">동의함</label>
+								<input type="radio" name="snsagree" id="snsagree">
+								<label for="agreeN">동의안함</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="sms">SMS 수신동의</label></th>
+							<td class="sms">
+								<p>관련된 정보의 SMS 수신에 동의합니다.</p>
+								<input type="radio" name="smsagree" id="snsagree">
+								<label for="agreeY">동의함</label>
+								<input type="radio" name="smsagree" id="snsagree">
+								<label for="agreeN">동의안함</label>
 							</td>
 						</tr>
 						

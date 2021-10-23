@@ -15,9 +15,7 @@
                 padding: 10px 40px;
                 
                 ul{
-                    // display: flex;
-                    // align-content: center;
-                    // justify-content: center;
+
                     text-align: center;
                     li{
                         display: inline-block;
@@ -37,11 +35,11 @@
                             color: #8f8f8f;
                             padding-top: 5px;
                             p{
-                                font: 13px/1 'arial';
+                                font: 13px/1 'Noto Sans KR';
                                 
                             }
                             span{
-                                font: 15px/1 'arial';
+                                font: 15px/1 'Noto Sans KR';
                                 
                             }
                             
@@ -53,7 +51,7 @@
             }
         }
         h2{
-            font:bold 18px/1 'arial'; 
+            font:bold 18px/1 'Open Sans'; 
             color:#555; 
             margin-bottom:20px; 
         }
@@ -121,9 +119,8 @@
                 height:40px; 
                 border: 3px solid #111;
                 background-color:#111; 
-                font: 14px/40px 'arial'; 
+                font: 14px/30px 'Noto Sans KR'; 
                 color:#fff; 
-                
             }
 
             input[type=reset]{
@@ -131,7 +128,7 @@
                 height:40px; 
                 border: 3px solid #000;
                 background-color:#fff; 
-                font:14px/40px 'arial'; 
+                font:14px/30px 'Noto Sans KR'; 
                 color:#111; 
                 margin:0 20px; 
             }
@@ -171,10 +168,22 @@
         
 
             .userid1{
-                font: 12px/1 'arial';
+                font: 12px/1 'Noto Sans KR';
                 color: #999;
                 display: inline-block;
                 margin-left: 10px;
+            }
+            .sns, .sms{
+                p{
+                    font: 14px/1 'Noto Sans KR';
+                    margin-bottom: 10px;
+                    color: #888;
+                }
+                label{
+                    font: 14px/1 'Noto Sans KR';
+                    margin-left: 5px;
+                    
+                }
             }
 
 
@@ -182,7 +191,7 @@
                 display: inline-block;
                 width: 100px;
                 height: 40px;
-                font: 13px/40px 'arial';
+                font: 13px/40px 'Noto Sans KR';
                 color: #fff;
                 background-color: #444444;
                 text-align: center;
@@ -251,7 +260,7 @@
     
                 .btn{
                     width: 80px;
-                    font: 12px/40px 'arial';
+                    font: 12px/40px 'Noto Sans KR';
                     margin: 5px 0;
     
                 }
