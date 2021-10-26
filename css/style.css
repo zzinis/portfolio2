@@ -1877,16 +1877,22 @@ fieldset {
           font: bold 24px/1 'Lora';
           margin-bottom: 20px; }
         #content .inner .wrap .left .pic1 {
-          width: 350px;
-          height: 240px;
-          background: #555; }
+          width: 450px;
+          height: 240px; }
+          #content .inner .wrap .left .pic1 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
         #content .inner .wrap .left .pic2 {
           width: 220px;
           height: 140px;
-          background: #bdbaba;
           position: absolute;
           bottom: 30px;
           left: -30px; }
+          #content .inner .wrap .left .pic2 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
           #content .inner .wrap .left .pic2 a {
             font: 15px/1 'Lora';
             color: #333;
@@ -1912,7 +1918,11 @@ fieldset {
         #content .inner .wrap .right .pic {
           width: 300px;
           height: 440px;
-          background: #555; }
+          overflow: hidden; }
+          #content .inner .wrap .right .pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
 
 /* commnet */
 #comment {
@@ -1947,9 +1957,12 @@ fieldset {
           #comment .inner .wrap .left article > .pic {
             width: 150px;
             height: 100px;
-            background: lightblue;
             float: left;
             margin-right: 15px; }
+            #comment .inner .wrap .left article > .pic img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover; }
           #comment .inner .wrap .left article > .txt {
             width: 60%;
             float: left;
