@@ -3,6 +3,8 @@ $("input[type=submit]").on("click", function(e){
     if(!isTxt("userid", 4)) e.preventDefault(); 
     if(!isName("username")) e.preventDefault(); 
     if(!isPwd("pwd1", "pwd2", 5)) e.preventDefault(); 
+    if(!isEmail("email")) e.preventDefault();
+    if(!isSelect("sns")) e.preventDefault(); 
 }); 
 
 function isTxt(name, len){
@@ -51,7 +53,7 @@ function isPwd(name1, name2, len){
     let eng = /[a-zA-Z]/; 
     let spc = /[~!@#$%^&*()_+\[\]-]/;
 
-    if(pwd1 ===pwd2 && pwd1.length >=len && num.test(pwd1) && eng.test(pwd1) && spc.test(pwd1)){
+    if(pwd1 === pwd2 && pwd1.length >=len && num.test(pwd1) && eng.test(pwd1) && spc.test(pwd1)){
 
         $("input[name="+name1+"]").parent().find("span").remove(); 
         return true; 
@@ -62,4 +64,37 @@ function isPwd(name1, name2, len){
         ); 
         return false; 
     }
+
 }
+
+function isEmail(name) {
+
+    let txt = $("[name="+name+"]").val(); 
+
+    if(email == ""){      
+        $("[name="+name+"]").parent().find("span").remove(); 
+        return true; 
+    }else{      
+        $("[name="+name+"]").parent().find("span").remove(); 
+        $("[name="+name+"]").parent().append(
+            "<span>메일 아이디를 입력하세요.</span>"
+        ); 
+        return false; 
+    }
+}
+
+function isSelect(name){
+
+    let sel = $("select[name="+name+"]").children("option:radio").val(); 
+ 
+    if(sel !==""){
+       $("select[name="+name+"]").parent().find("span").remove(); 
+       return true; 
+    }else{
+       $("select[name="+name+"]").parent().find("span").remove(); 
+       $("select[name="+name+"]").parent().append(
+          "<span>필수 입력항목을 선택해 주세요 </span>"
+       ); 
+       return false; 
+    }
+ }
