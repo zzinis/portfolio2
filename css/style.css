@@ -706,6 +706,16 @@ fieldset {
   width: 100%; }
   .gallery .inner #gallery {
     position: relative; }
+    .gallery .inner #gallery .loading {
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: 0.5s; }
+      .gallery .inner #gallery .loading.off {
+        opacity: 0; }
     .gallery .inner #gallery ul {
       width: 100%;
       display: flex;

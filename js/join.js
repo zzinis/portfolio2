@@ -83,18 +83,18 @@ function isEmail(name) {
     }
 }
 
-function isSelect(name){
+// function isSelect(name){
 
-    let sel = $("select[name="+name+"]").children("option:radio").val(); 
- 
-    if(sel !==""){
-       $("select[name="+name+"]").parent().find("span").remove(); 
-       return true; 
-    }else{
-       $("select[name="+name+"]").parent().find("span").remove(); 
-       $("select[name="+name+"]").parent().append(
-          "<span>필수 입력항목을 선택해 주세요 </span>"
-       ); 
-       return false; 
-    }
- }
+//     let sel = $("select[name="+name+"]").children("option:radio").val(); 
+
+//     if(sel !==""){
+//        $("select[name="+name+"]").parent().find("span").remove(); 
+//        return true; 
+//     }else{
+//        $("select[name="+name+"]").parent().find("span").remove(); 
+//        $("select[name="+name+"]").parent().append(
+//           "<span>필수 입력항목을 선택해 주세요 </span>"
+//        ); 
+//        return false; 
+//     }
+// }
