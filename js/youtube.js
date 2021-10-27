@@ -56,10 +56,10 @@ $.ajax({
 })
 
 
-$("body").on("click", "#vidGallery article a", function(e){
+$("body").on("click", "#vidGallery article", function(e){
     e.preventDefault();
 
-    let vidId = $(this).attr("href");
+    let vidId = $(this).children("a").attr("href");
     $("body")
         .append(
             $("<div class = 'pop'>")
