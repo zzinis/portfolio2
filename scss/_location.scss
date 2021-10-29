@@ -75,6 +75,10 @@
             #map{
                 width: 980px;
                 height: 550px;
+                filter: grayscale(1);
+                &:hover{
+                    filter: grayscale(70%);
+                }
 
                 .storeInfo{
                     >div{

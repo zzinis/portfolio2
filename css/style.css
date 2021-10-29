@@ -1116,7 +1116,10 @@ fieldset {
         border-bottom: 1px solid #575555; }
     .location .inner .map #map {
       width: 980px;
-      height: 550px; }
+      height: 550px;
+      filter: grayscale(1); }
+      .location .inner .map #map:hover {
+        filter: grayscale(70%); }
       .location .inner .map #map .storeInfo > div {
         position: absolute;
         top: 15%;
