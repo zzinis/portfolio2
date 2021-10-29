@@ -1348,12 +1348,13 @@ fieldset {
           padding: 45px 0; }
         #header .inner .menuWeb #gnb > li .sub {
           width: 1180px;
-          height: 300px;
+          height: 280px;
           position: absolute;
           top: 70px;
           left: -55%;
           background: #fff;
-          display: none; }
+          display: none;
+          border: 1px solid #bbb; }
           #header .inner .menuWeb #gnb > li .sub::before {
             content: '';
             display: block;
@@ -1372,43 +1373,70 @@ fieldset {
             top: 0;
             right: -100%;
             background: #fff; }
-          #header .inner .menuWeb #gnb > li .sub .wrap {
-            display: flex;
-            justify-content: space-between; }
-            #header .inner .menuWeb #gnb > li .sub .wrap .sub_con1 {
-              padding: 30px; }
-              #header .inner .menuWeb #gnb > li .sub .wrap .sub_con1 img {
-                width: 150px;
-                height: 150px;
-                margin-bottom: 10px;
-                object-fit: cover; }
-              #header .inner .menuWeb #gnb > li .sub .wrap .sub_con1 h2 {
-                font: 16px/1 'Heebo'; }
-            #header .inner .menuWeb #gnb > li .sub .wrap .sub_con2 {
-              padding: 30px; }
-              #header .inner .menuWeb #gnb > li .sub .wrap .sub_con2 img {
-                width: 450px;
-                height: 220px;
-                object-fit: cover; }
-            #header .inner .menuWeb #gnb > li .sub .wrap .sub_con3 {
-              padding: 30px; }
-              #header .inner .menuWeb #gnb > li .sub .wrap .sub_con3 h3 {
-                font: 18px/1 'Heebo';
-                margin-bottom: 15px; }
-                #header .inner .menuWeb #gnb > li .sub .wrap .sub_con3 h3::after {
-                  content: '';
-                  display: block;
-                  width: 10px;
-                  height: 1px;
-                  background: #434343;
-                  margin-top: 5px; }
-              #header .inner .menuWeb #gnb > li .sub .wrap .sub_con3 ul li {
+        #header .inner .menuWeb #gnb > li.m_depart .wrap {
+          display: flex;
+          justify-content: space-between; }
+          #header .inner .menuWeb #gnb > li.m_depart .wrap .sub_con1 {
+            padding: 30px; }
+            #header .inner .menuWeb #gnb > li.m_depart .wrap .sub_con1 img {
+              width: 150px;
+              height: 150px;
+              margin-bottom: 10px;
+              object-fit: cover; }
+            #header .inner .menuWeb #gnb > li.m_depart .wrap .sub_con1 h2 {
+              font: 16px/1 'Heebo'; }
+          #header .inner .menuWeb #gnb > li.m_depart .wrap .sub_con2 {
+            padding: 30px; }
+            #header .inner .menuWeb #gnb > li.m_depart .wrap .sub_con2 img {
+              width: 450px;
+              height: 220px;
+              object-fit: cover; }
+          #header .inner .menuWeb #gnb > li.m_depart .wrap .sub_con3 {
+            padding: 30px; }
+            #header .inner .menuWeb #gnb > li.m_depart .wrap .sub_con3 h3 {
+              font: 18px/1 'Heebo';
+              margin-bottom: 15px; }
+              #header .inner .menuWeb #gnb > li.m_depart .wrap .sub_con3 h3::after {
+                content: '';
+                display: block;
+                width: 10px;
+                height: 1px;
+                background: #434343;
+                margin-top: 5px; }
+            #header .inner .menuWeb #gnb > li.m_depart .wrap .sub_con3 ul li {
+              display: block; }
+              #header .inner .menuWeb #gnb > li.m_depart .wrap .sub_con3 ul li a {
+                font: bold 15px/1 'Heebo';
+                color: #212121;
+                padding: 8px 0;
                 display: block; }
-                #header .inner .menuWeb #gnb > li .sub .wrap .sub_con3 ul li a {
-                  font: bold 15px/1 'Heebo';
-                  color: #212121;
-                  padding: 8px 0;
-                  display: block; }
+        #header .inner .menuWeb #gnb > li.m_youtube .wrap {
+          display: flex;
+          justify-content: space-between; }
+          #header .inner .menuWeb #gnb > li.m_youtube .wrap .sub_con1 {
+            padding: 30px;
+            text-align: right; }
+            #header .inner .menuWeb #gnb > li.m_youtube .wrap .sub_con1 h2 {
+              font: 18px/1 'Heebo';
+              margin-bottom: 15px; }
+              #header .inner .menuWeb #gnb > li.m_youtube .wrap .sub_con1 h2::after {
+                content: '';
+                display: block;
+                width: 10px;
+                height: 1px;
+                background: #434343;
+                margin-top: 5px; }
+            #header .inner .menuWeb #gnb > li.m_youtube .wrap .sub_con1 ul li a {
+              font: bold 15px/1 'Heebo';
+              color: #212121;
+              padding: 8px 0;
+              display: block; }
+          #header .inner .menuWeb #gnb > li.m_youtube .wrap .sub_con2 {
+            padding: 30px; }
+            #header .inner .menuWeb #gnb > li.m_youtube .wrap .sub_con2 img {
+              width: 600px;
+              height: 220px;
+              object-fit: cover; }
     #header .inner .menuWeb .form-text {
       position: absolute;
       top: 50%;
@@ -1567,6 +1595,14 @@ fieldset {
           font: 50px/1 'Overpass', sans-serif;
           color: #111;
           margin-bottom: 30px; }
+          #visual .inner .wrap .left h1 span {
+            color: #222;
+            transform: scale(0.9);
+            transition: 0.3s;
+            opacity: 0; }
+          #visual .inner .wrap .left h1.on span {
+            transform: scale(1);
+            opacity: 1; }
         #visual .inner .wrap .left a {
           color: #333;
           display: inline-block;
