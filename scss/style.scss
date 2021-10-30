@@ -57,7 +57,7 @@
                     }
                     .sub{
                         width: 1180px;
-                        height: 280px;
+                        height: 300px;
                         position: absolute;
                         top: 70px;
                         left: -55%;
@@ -187,6 +187,55 @@
                         }
                         
                         
+                    }
+                    &.m_community{
+                        .wrap{
+                            display: flex;
+                            justify-content: space-evenly;
+                            
+                            article{
+                                width: 380px;
+                                margin-right: 20px;
+                                padding: 20px;
+                                &:last-child{
+                                    margin-right: 0px;
+                                }
+                                p{
+                                    font: 14px/1 'Open Sans';
+                                    margin-bottom: 10px;
+                                    &::after{
+                                        content: '';
+                                        display: block;
+                                        width: 20px;
+                                        height: 1px;
+                                        background: #434343;
+                                        margin-top: 10px;
+                                    }
+                                }
+                                h2{
+                                    a{
+                                        font: bold 18px/1 'Open Sans';
+                                        color: #111;
+                                        display: block;
+                                        margin-bottom: 10px;
+                                    }
+                                }
+                                span{
+                                    font: 13px/1.2 'Open Sans';
+                                    color: #434343;
+                                    
+                                }
+                                img{
+                                    margin-top: 10px;
+                                    width: 100%;
+                                    height: 150px;
+                                    object-fit: cover;
+                                }
+
+                                
+
+                            }
+                        }
                     }
 
                 }
