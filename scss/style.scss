@@ -288,6 +288,62 @@
                         }
                     }
 
+                    &.m_location{
+                        .sub{
+                            .wrap{
+                                display: flex;
+                                justify-content: space-between;
+                                .sub_con1{
+                                    padding: 30px;
+                                    width: 400px;
+                                    article{
+                                        padding: 20px;
+                                        border-right: 1px solid #bbb;
+
+                                        h2{
+                                            font: bold 18px/1 'Open Sans';
+                                            margin-bottom: 5px;
+                                        }
+                                        p{
+                                            font: 13px/1 'Open Sans';
+                                            color: #a3a2a2;
+                                            margin-bottom: 15px;
+                                            border-bottom: 1px solid #bbb;
+                                            padding-bottom: 10px;
+                                        }
+                                        span{
+                                            font: 14px/1.3 'Open Sans';
+                                            margin-bottom: 15px;
+                                            display: block;
+                                            border-bottom: 1px solid #bbb;
+                                            padding-bottom: 10px;
+                                        }
+                                        ul{
+                                            li{
+                                                a{
+                                                    font: bold 15px/1 'Open Sans';
+                                                    display: block;
+                                                    margin-bottom: 10px;
+                                                    color: #111;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    
+                                }
+
+                                .sub_con2{
+                                    padding: 30px;
+                                    img{
+                                        width: 500px;
+                                        height: 250px;
+                                        object-fit: cover;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
                 }
             }
             .form-text{
