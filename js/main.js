@@ -27,3 +27,4 @@ $("#gnb>li").each(function(index){
         $("#gnb>li").eq(index).find(".sub").hide();
     });
 });
+

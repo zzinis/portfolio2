@@ -1691,16 +1691,16 @@ fieldset {
         padding-top: 40px;
         border-bottom: 1px solid #bbb;
         margin-right: 2%; }
-        #visual .inner .wrap .left h1 {
-          font: 50px/1 'Overpass', sans-serif;
+        #visual .inner .wrap .left .txt h1 {
+          font: 50px/1 'Overpass';
           color: #111;
           margin-bottom: 30px; }
-          #visual .inner .wrap .left h1 span {
+          #visual .inner .wrap .left .txt h1 span {
             color: #222;
             transform: scale(0.9);
             transition: 0.3s;
             opacity: 0; }
-          #visual .inner .wrap .left h1.on span {
+          #visual .inner .wrap .left .txt h1.on span {
             transform: scale(1);
             opacity: 1; }
         #visual .inner .wrap .left a {
