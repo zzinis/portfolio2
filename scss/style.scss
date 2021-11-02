@@ -28,6 +28,7 @@
             left: 0;
             top: 50%;
             transform: translateY(-50%);
+            
             >a{
                 font:  24px/1  'Open Sans', sans-serif;
                 color: #1F2120;
@@ -45,16 +46,19 @@
             
 
                 >li{
-                    display: inline-block;
-                    margin-left: 35px;
+                    float: left;
                     font-size: 0;
+                    border: 1px solid #bbb;
+                    &::after{
+                        content: '';
+                        display: block;
+                        clear: both;
+                    }
                     
                     >a{
-                        font: bold 14px/45px 'Overpass', sans-serif;
+                        font: bold 14px/45px 'Overpass';
                         color: #1F2120;
-                        padding: 45px 0;
-                        
-                        
+                        padding: 45px 15px;
                     }
                     .sub{
                         width: 1180px;

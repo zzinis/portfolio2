@@ -49,12 +49,11 @@ fieldset {
       z-index: 3; }
       #header_sub .inner .menuWeb #gnb > li {
         display: inline-block;
-        margin-left: 35px;
-        font-size: 0; }
+        font-size: 0;
+        padding: 45px 15px; }
         #header_sub .inner .menuWeb #gnb > li > a {
           font: bold 14px/45px 'Overpass', sans-serif;
-          color: #1F2120;
-          padding: 45px 0; }
+          color: #1F2120; }
         #header_sub .inner .menuWeb #gnb > li .sub {
           width: 1180px;
           height: 300px;
@@ -1554,13 +1553,17 @@ fieldset {
       transform: translateY(-50%);
       z-index: 3; }
       #header .inner .menuWeb #gnb > li {
-        display: inline-block;
-        margin-left: 35px;
-        font-size: 0; }
+        float: left;
+        font-size: 0;
+        border: 1px solid #bbb; }
+        #header .inner .menuWeb #gnb > li::after {
+          content: '';
+          display: block;
+          clear: both; }
         #header .inner .menuWeb #gnb > li > a {
-          font: bold 14px/45px 'Overpass', sans-serif;
+          font: bold 14px/45px 'Overpass';
           color: #1F2120;
-          padding: 45px 0; }
+          padding: 45px 15px; }
         #header .inner .menuWeb #gnb > li .sub {
           width: 1180px;
           height: 300px;
