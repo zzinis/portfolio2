@@ -49,7 +49,8 @@ fieldset {
       z-index: 3; }
       #header_sub .inner .menuWeb #gnb > li {
         display: inline-block;
-        margin-left: 35px; }
+        margin-left: 35px;
+        font-size: 0; }
         #header_sub .inner .menuWeb #gnb > li > a {
           font: bold 14px/45px 'Overpass', sans-serif;
           color: #1F2120;
@@ -1554,7 +1555,8 @@ fieldset {
       z-index: 3; }
       #header .inner .menuWeb #gnb > li {
         display: inline-block;
-        margin-left: 35px; }
+        margin-left: 35px;
+        font-size: 0; }
         #header .inner .menuWeb #gnb > li > a {
           font: bold 14px/45px 'Overpass', sans-serif;
           color: #1F2120;
