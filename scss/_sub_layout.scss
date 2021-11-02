@@ -26,29 +26,32 @@
             #gnb{
                 position: absolute;
                 top: 50%;
-                right: 26%;
+                right: 24%;
                 transform: translateY(-50%);
                 z-index: 3;
             
 
                 >li{
-                    display: inline-block;
+                    float: left;
                     font-size: 0;
-                    padding: 45px 15px;
+                    &::after{
+                        content: '';
+                        display: block;
+                        clear: both;
+                    }                    
                     
                     >a{
                         font: bold 14px/45px 'Overpass', sans-serif;
                         color: #1F2120;
-                        
-                        
-                        
+                        padding: 45px 20px;
+
                     }
                     .sub{
                         width: 1180px;
                         height: 300px;
                         position: absolute;
                         top: 70px;
-                        left: -55%;
+                        left: -59%;
                         background: #fff;
                         display: none;
                         border: 1px solid #bbb;
