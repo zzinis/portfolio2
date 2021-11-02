@@ -2,12 +2,11 @@
 // const h1 = $(".txt h1");
 
 
-// window.onload = (function(){
+// $(window).onload(function(){
 //     $(h1).each(function(index, data){
 //         letter($(data), 0.1);
 //     });
-    
-// })
+// });
 
 
 

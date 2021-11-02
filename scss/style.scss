@@ -564,28 +564,35 @@
                 border-bottom: 1px solid #bbb;
                 margin-right: 2%;
                 .txt{
-                    h1{
-                        font: 50px/1 'Overpass';
-                        color: #111;
-                        margin-bottom: 30px;
-    
-                        span {
-                            
-                            color: #222;
-                            transform: scale(0.9);
-                            transition: 0.3s;
-                            opacity: 0;
+                    svg text{
+                        font: 42px/1 'Overpass';
+                        fill: #fff;
+                        stroke: #111;
+                        stroke-width: 2;
+                        stroke-linejoin: miter;
+                        stroke-linecap: square;
+                        stroke-dasharray: 240px;
+                        stroke-dashoffset: 240px;
+                        transform: scale(0.96);
+                        transform-origin: center center;
+                        animation: ani 3s alternate-reverse linear infinite;
+
+                    }
+                    @keyframes ani{
+                        0%{ stroke-dashoffset:240px;
+                            transition: stroke-dashoffset 1s 1s, fill 1s 0s; 
                         }
-    
-                        &.on {
-                            span {
-                                transform: scale(1);
-                                opacity: 1;
-                            }
+
+                        100%{ 
+                            fill: #111;
+                            stroke-dashoffset:0px;
+                            stroke-dashoffset: 0;
+                            transition: stroke-dashoffset 1s 0s, fill 1s 1s;
                         }
                     }
 
                 }
+
                 
                 a{
                     color: #333;
