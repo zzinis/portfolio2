@@ -1930,6 +1930,7 @@ fieldset {
     transition: stroke-dashoffset 1s 1s, fill 1s 0s; }
   100% {
     fill: #111;
+    stroke-width: 1;
     stroke-dashoffset: 0px;
     stroke-dashoffset: 0;
     transition: stroke-dashoffset 1s 0s, fill 1s 1s; } }
