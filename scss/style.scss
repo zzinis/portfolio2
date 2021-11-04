@@ -1522,10 +1522,46 @@
                     display: flex;
                     flex-wrap: wrap;
                     align-content: space-between;
-                    h1{
-                        font: 4vh/1 'Overpass', sans-serif;
-                        color: #111;
-                        margin-bottom: 30px;
+                    .txt{
+                        width: 100%;
+                        svg{
+                            width: 100%;
+                            height: 130px;
+                            
+                        }
+                        svg text{
+                            font: 62px/1 'Overpass';
+                            fill: #111;
+                            stroke: #111;
+                            stroke-width: 2;
+                            stroke-linejoin: miter;
+                            stroke-linecap: square;
+                            stroke-dasharray: 240px;
+                            stroke-dashoffset: 240px;
+                            transform: scale(0.96);
+                            transform-origin: center center;
+                            animation: ani 3s alternate-reverse linear infinite;
+
+    
+                        }
+                        tspan{
+                            position: absolute;
+                            left: 0;
+                        }
+                        @keyframes ani{
+                            0%{ stroke-dashoffset:240px;
+                                transition: stroke-dashoffset 1s 1s, fill 1s 0s; 
+                            }
+    
+                            100%{ 
+                                fill: #111;
+                                stroke-width: 1;
+                                stroke-dashoffset:0px;
+                                stroke-dashoffset: 0;
+                                transition: stroke-dashoffset 1s 0s, fill 1s 1s;
+                            }
+                        }
+    
                     }
                     a{
                         display: none;

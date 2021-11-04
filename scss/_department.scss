@@ -209,12 +209,15 @@
                     margin-right: 20px;
                     margin-bottom: 50px;
                     transition: 0.5s;
+                    &:hover{
+                        filter: grayscale(50%);
+                    }
 
-                    
-
+        
                     &:nth-of-type(4),&:nth-of-type(8) {
                     margin-right: 0;
                     }
+
                     h2{
                     font: bold 20px/1 'Overpass', sans-serif;
                     color: #222;
@@ -224,37 +227,33 @@
                     }
 
                     .pic{
-                    width: 100%;
-                    height: 300px;
-                    margin-bottom: 30px;
-                    transition: 0.5s;
-                    img{
                         width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                    }
+                        height: 300px;
+                        margin-bottom: 30px;
+                        transition: 0.5s;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
                     }
 
                     h2{
-                    font: bold 20px/1 'Overpass', sans-serif;
-                    color: #222;
-                    margin-bottom: 5px;
-
+                        font: bold 20px/1 'Overpass', sans-serif;
+                        color: #222;
+                        margin-bottom: 5px;
                     }
 
                     h3{
-                    font: 17px/1 'Overpass', sans-serif;
-                    color: #777;
-                    margin-bottom: 15px;
-                    
-                    
+                        font: 17px/1 'Overpass', sans-serif;
+                        color: #777;
+                        margin-bottom: 15px;
                     }
                     p{
-                    border-top: 1px solid #bbb;
-                    padding: 15px 0;
-                    font: 15px/1.5 'Overpass', sans-serif;
-                    color: #555;
-                    
+                        border-top: 1px solid #bbb;
+                        padding: 15px 0;
+                        font: 15px/1.5 'Overpass', sans-serif;
+                        color: #555;
                     }
                 }
             }
