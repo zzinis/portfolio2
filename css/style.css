@@ -1568,7 +1568,22 @@ fieldset {
         #header .inner .menuWeb #gnb > li > a {
           font: bold 14px/45px 'Overpass';
           color: #1F2120;
-          padding: 45px 20px; }
+          padding: 45px 20px;
+          position: relative; }
+          #header .inner .menuWeb #gnb > li > a::before {
+            content: "";
+            width: 30%;
+            height: 1px;
+            position: absolute;
+            left: 35%;
+            bottom: 35%;
+            background: #5f5e5e;
+            transition: 0.5s transform ease;
+            transform: scale3d(0, 1, 1);
+            transform-origin: 100 50%; }
+          #header .inner .menuWeb #gnb > li > a:hover::before {
+            transform: scale3d(1, 1, 1);
+            transform-origin: 0 50%; }
         #header .inner .menuWeb #gnb > li .sub {
           width: 1180px;
           height: 300px;
