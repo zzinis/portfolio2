@@ -1107,8 +1107,17 @@ fieldset {
         font: bold 18px/1.4 'Open Sans';
         margin-top: 80px; } }
 .department .sub_visual {
-  background: url(../img/bg1.jpg) no-repeat center/cover;
-  opacity: 0.7; }
+  width: 100%;
+  position: relative; }
+  .department .sub_visual::before {
+    content: '';
+    background: url(../img/bg1.jpg) no-repeat center/cover;
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px; }
 .department .inner {
   width: 1180px;
   margin: 0 auto;
