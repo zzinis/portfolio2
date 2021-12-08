@@ -851,38 +851,49 @@
                 width: 49%;
                 margin-right: 2%;
                 padding: 150px 60px;
+                opacity: 0;
+                transform: translateX(100px);
+                transition: 0.2s;
 
                 h1{
                     font: bold 15px/1 'Hebo';
                     margin-bottom: 100px;
                     color: #f0a417;
-                    
+                    transition-delay: 0.2s;
                 }
                 p{
                     font: 600 16px/1.7 'Hebo';
                     color: #212121;
-                    
-                    
+                    transition-delay: 0.2s; 
                 }
             }
 
             .right{
                 float: left;
                 width: 49%;
+                opacity: 0;
+                transform: translateX(100px);
+                transition: 1s;
 
                 h2{
                     font: bold 24px/1.4 'Josefin Sans';
                     letter-spacing: -1px;
                     margin-bottom: 50px;
+                    transition-delay: 0.5s; 
                 }
                 img{
                     width: 700px;
                     height: 600px;
+                    transition-delay: 0.8s; 
                 }
             }
 
 
         }
+    }
+    &.on .inner .wrap .left, &.on .inner .wrap .right{
+        opacity:1; 
+        transform:translateY(0px); 
     }
 }
 
