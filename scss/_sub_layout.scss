@@ -15,6 +15,7 @@
             left: 0;
             top: 50%;
             transform: translateY(-50%);
+            
             >a{
                 font:  24px/1  'Open Sans', sans-serif;
                 color: #1F2120;
@@ -34,17 +35,39 @@
                 >li{
                     float: left;
                     font-size: 0;
+                    
+
                     &::after{
                         content: '';
                         display: block;
                         clear: both;
-                    }                    
+                    }
                     
                     >a{
-                        font: bold 14px/45px 'Overpass', sans-serif;
+                        font: bold 14px/45px 'Overpass';
                         color: #1F2120;
                         padding: 45px 20px;
+                        position: relative;
 
+                        &::before{
+                            content: "";
+                            width: 30%;
+                            height: 1px;
+                            position: absolute;
+                            left: 35%;
+                            bottom: 35%;
+                            background: #5f5e5e;
+                            transition: 0.5s transform ease;
+                            transform: scale3d(0,1,1);
+                            transform-origin: 100 50%;
+                        }
+                        &:hover{
+                            &::before{
+                                transform: scale3d(1,1,1);
+                                transform-origin: 0 50%;
+                            }
+                        }
+                        
                     }
                     .sub{
                         width: 1180px;
@@ -428,7 +451,7 @@
                 content:''; 
                 display:block; 
                 width:100%; 
-                height:2px; 
+                height:3px; 
                 background:#000; 
                 position:absolute; 
                 top:0; 
@@ -451,7 +474,7 @@
             span{
                 display:block; 
                 width:100%; 
-                height:2px; 
+                height:3px; 
                 background:#000; 
                 text-indent:-9999px; 
                 position:absolute; 
